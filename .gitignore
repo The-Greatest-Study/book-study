@@ -61,3 +61,8 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos
+
+# jiin IntelliJ project files
+Head-First-Design-Pattern/jiin/.idea
+Head-First-Design-Pattern/jiin/out
+Head-First-Design-Pattern/jiin/build
