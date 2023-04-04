@@ -1,3 +1,5 @@
+package jiin.chapter02_observer;
+
 import jiin.chapter02_observer.*;
 
 public class Main {
