@@ -1,8 +1,6 @@
 package jiin.chapter02_observer;
 
-import jiin.chapter02_observer.*;
-
-public class Main {
+public class WeatherStation {
     public static void main(String[] args) {
         System.out.println("Hello TGS");
 
