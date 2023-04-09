@@ -1,6 +1,8 @@
-package jihong.chapter03_Decorator;
+package jihong.chapter03_Decorator.Beverage;
 
-public class Decaffeination extends Beverage{
+import jihong.chapter03_Decorator.Beverage.Beverage;
+
+public class Decaffeination extends Beverage {
     public Decaffeination(){
         description = "디카페인 커피";
     }

@@ -1,6 +1,8 @@
-package jihong.chapter03_Decorator;
+package jihong.chapter03_Decorator.Beverage;
 
-public class HouseBlend extends Beverage{
+import jihong.chapter03_Decorator.Beverage.Beverage;
+
+public class HouseBlend extends Beverage {
     public HouseBlend(){
         description = "하우스 블렌드 커피";
     }

@@ -1,6 +1,8 @@
-package jihong.chapter03_Decorator;
+package jihong.chapter03_Decorator.Beverage;
 
-public class DarkRost extends Beverage{
+import jihong.chapter03_Decorator.Beverage.Beverage;
+
+public class DarkRost extends Beverage {
     public DarkRost(){
         description = "다크로스트 커피";
     }

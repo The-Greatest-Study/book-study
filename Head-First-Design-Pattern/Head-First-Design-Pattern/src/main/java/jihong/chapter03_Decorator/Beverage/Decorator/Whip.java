@@ -1,4 +1,6 @@
-package jihong.chapter03_Decorator;
+package jihong.chapter03_Decorator.Beverage.Decorator;
+
+import jihong.chapter03_Decorator.Beverage.Beverage;
 
 public class Whip extends CondimentDecorator{
     public Whip(Beverage beverage){
@@ -10,7 +12,7 @@ public class Whip extends CondimentDecorator{
     }
 
     @Override
-    public String getDescripton() {
+    public String getDescription() {
         return beverage.getDescription() + ", 휘핑크림";
     }
 }

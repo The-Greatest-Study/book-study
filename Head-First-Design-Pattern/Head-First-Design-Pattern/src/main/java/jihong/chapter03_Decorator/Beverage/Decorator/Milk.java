@@ -1,4 +1,6 @@
-package jihong.chapter03_Decorator;
+package jihong.chapter03_Decorator.Beverage.Decorator;
+
+import jihong.chapter03_Decorator.Beverage.Beverage;
 
 public class Milk extends CondimentDecorator{
     public Milk(Beverage beverage){
@@ -10,7 +12,7 @@ public class Milk extends CondimentDecorator{
     }
 
     @Override
-    public String getDescripton() {
+    public String getDescription() {
         return beverage.getDescription() + ", 우유";
     }
 }

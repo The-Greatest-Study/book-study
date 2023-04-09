@@ -1,4 +1,4 @@
-package jihong.chapter03_Decorator;
+package jihong.chapter03_Decorator.Beverage;
 
 public abstract class Beverage {
     String description = "제목 없음";
