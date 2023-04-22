@@ -15,7 +15,7 @@ public class PizzaStore {
         /* 팩토리 패턴을 이용하여 구상 클래스의 인스턴스를 만들지 않아도 됨 */
         pizza = factory.createPizza(type);
 
-        pizza.prepare();
+//        pizza.prepare();
         pizza.bake();
         pizza.box();
 
