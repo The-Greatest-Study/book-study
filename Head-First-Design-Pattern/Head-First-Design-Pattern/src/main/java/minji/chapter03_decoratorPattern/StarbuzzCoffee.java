@@ -4,6 +4,7 @@ import minji.chapter03_decoratorPattern.Decorator.Mocha;
 import minji.chapter03_decoratorPattern.Decorator.Whip;
 
 public class StarbuzzCoffee {
+
     public static void main(String[] args) {
         Beverage beverage = new Espresso();
         System.out.println(beverage.getDescription() + " $" + beverage.cost());
@@ -23,8 +24,7 @@ public class StarbuzzCoffee {
         Beverage beverage3 = new HouseBlend();
         beverage3.setSize(Beverage.Size.VENTI);
         beverage3 = new Whip(beverage3);
+
         System.out.println(beverage3.cost()); // 1.5 + 0.2 = 1.7
-
-
     }
 }
