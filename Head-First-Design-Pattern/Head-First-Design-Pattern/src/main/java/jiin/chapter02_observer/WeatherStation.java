@@ -2,12 +2,6 @@ package jiin.chapter02_observer;
 
 public class WeatherStation {
     public static void main(String[] args) {
-        System.out.println("Hello TGS");
-
-        chapter02();
-    }
-
-    public static void chapter02(){
         System.out.println("****************************************");
         System.out.println("Chapter 02. Observer Pattern");
         System.out.println("****************************************");
