@@ -8,5 +8,9 @@ package jihong.chapter05_Sigleton;
 public class _5EnumSingleton {
     public static void main(String[] args) {
         EnumSingleton singleton = EnumSingleton.UNIQUE_INSTANCE;
+
+        //자바에서 싱클톤패턴 사용 예시
+        Runtime runtime = Runtime.getRuntime();
+
     }
 }

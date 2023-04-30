@@ -14,9 +14,9 @@ public class _2Singleton {
     /**
      * synchronized
      * - getInstance 동기화
-     * - 한 스레드가 메소드 사용이 끝내기 전까지 다른 스데르를 기다려야 함
+     * - 한 스레드가 메소드 사용이 끝내기 전까지 다른 스레드를 기다려야 함
      * - 불필요한 오버헤드 증가
-     * - 성능 저하
+     * - 성능 저하 (100배)
      * @return
      */
     public static synchronized _2Singleton getInstance(){
