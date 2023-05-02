@@ -61,7 +61,7 @@ public class HashedRemoteControl {
             String tokenStr = token.toString();
             stringBuffer.append("[slot "+token+ "] "
                     + onSlotMap.get(tokenStr).getClass().getName() + "\t"
-                    + offSlotMap.get(tokenStr).getClass().getName());
+                    + offSlotMap.get(tokenStr).getClass().getName()+ "\n");
         }
 
         return stringBuffer.toString();

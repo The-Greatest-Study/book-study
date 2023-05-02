@@ -6,8 +6,8 @@ import minho.chapter06_encapsulation_of_method_call.Equipments.Light;
 import minho.chapter06_encapsulation_of_method_call.RemoteControls.HashedRemoteControl;
 
 public class RemoteLoader {
-    public static final String LIVING_ROOM_LIGHT = "livingRoomLight";
-    public static final String KITCHEN_LIGHT = "kitchenLight";
+    public static final String LIVING_ROOM_LIGHT = "LIVING_ROOM_LIGHT";
+    public static final String KITCHEN_LIGHT = "KITCHEN_LIGHT";
 
     public static void main(String[] args) {
         HashedRemoteControl remoteControl = new HashedRemoteControl();
