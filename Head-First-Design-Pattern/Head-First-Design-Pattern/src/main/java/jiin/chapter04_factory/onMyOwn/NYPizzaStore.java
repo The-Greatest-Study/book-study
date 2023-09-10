@@ -19,18 +19,18 @@ public class NYPizzaStore implements PizzaStore{
         System.out.println("  - dough : " + pizza.getDough());
         System.out.println("  - sauce : " + pizza.getSauce());
         System.out.println("  - cheese : " + pizza.getCheese());
-        switch(pizza.getName()){
-            case "veggie" -> {
+        switch (pizza.getName()) {
+            case "veggie":
                 System.out.println("  - veggies : " + String.join(", ", pizza.getVeggies()));
-            }
-            case "clam" -> {
+                break;
+            case "clam":
                 System.out.println("  - veggies : " + String.join(", ", pizza.getVeggies()));
                 System.out.println("  - clams : " + pizza.getClam());
-            }
-            case "pepperoni" -> {
+                break;
+            case "pepperoni":
                 System.out.println("  - veggies : " + String.join(", ", pizza.getVeggies()));
                 System.out.println("  - pepperoni : " + pizza.getPepperoni());
-            }
+                break;
         }
     };
 

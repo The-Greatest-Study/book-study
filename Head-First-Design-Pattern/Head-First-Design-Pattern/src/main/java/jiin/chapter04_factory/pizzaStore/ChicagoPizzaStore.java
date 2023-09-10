@@ -11,12 +11,17 @@ public class ChicagoPizzaStore extends PizzaStore {
     Pizza createPizza(String type) {
         PizzaIngredientFactory ingredientFactory = new ChicagoPizzaIngredientFactory();
 
-        return switch(type){
-            case "cheese" -> new CheesePizza(ingredientFactory);
-            case "veggie" -> new VeggiePizza(ingredientFactory);
-            case "clam" -> new ClamPizza(ingredientFactory);
-            case "pepperoni" -> new PepperoniPizza(ingredientFactory);
-            default -> null;
-        };
+        switch (type) {
+            case "cheese":
+                return new CheesePizza(ingredientFactory);
+            case "veggie":
+                return new VeggiePizza(ingredientFactory);
+            case "clam":
+                return new ClamPizza(ingredientFactory);
+            case "pepperoni":
+                return new PepperoniPizza(ingredientFactory);
+            default:
+                return null;
+        }
     }
 }
