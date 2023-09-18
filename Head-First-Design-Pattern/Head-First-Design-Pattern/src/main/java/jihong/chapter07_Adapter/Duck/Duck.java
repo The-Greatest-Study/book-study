@@ -1,4 +1,6 @@
+package jihong.chapter07_Adapter.Duck;
+
 public interface Duck {
-    public void quakc();
+    public void quack();
     public void fly();
 }

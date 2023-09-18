@@ -1,5 +1,7 @@
-public class TurKeyAdap {
-    TurKey turkey;
+package jihong.chapter07_Adapter.Duck;
+
+public class TurkeyAdapter {
+    Turkey turkey;
 
     public TurkeyAdapter(Turkey turkey){
         this.turkey = turkey;

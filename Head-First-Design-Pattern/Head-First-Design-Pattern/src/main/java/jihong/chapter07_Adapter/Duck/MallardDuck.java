@@ -1,4 +1,6 @@
-public class MallarDuck implements Duck{
+package jihong.chapter07_Adapter.Duck;
+
+public class MallardDuck implements Duck{
     public void quack() {
         System.out.println("꽥");
     }

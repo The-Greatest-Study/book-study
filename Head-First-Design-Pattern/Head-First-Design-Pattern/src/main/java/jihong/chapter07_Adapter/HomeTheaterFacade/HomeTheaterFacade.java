@@ -1,5 +1,7 @@
+package jihong.chapter07_Adapter.HomeTheaterFacade;
+
 public class HomeTheaterFacade {
-    Amplifier apm;
+    Amplifier amp;
     Tuner tuner;
     StreamingPlayer player;
     Projector projector;
@@ -9,7 +11,7 @@ public class HomeTheaterFacade {
 
     public HomeTheaterFacade(Amplifier amp, Tuner tuner, StreamingPlayer player, Projector projector, Screen screen, TheaterLights lights, PopcornPopper popper){
         this.amp = amp;
-        this.tuner = tnuer;
+        this.tuner = tuner;
         this.player = player;
         this.projector = projector;
         this.screen = screen;

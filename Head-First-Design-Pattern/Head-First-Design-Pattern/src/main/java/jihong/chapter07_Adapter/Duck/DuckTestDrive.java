@@ -1,3 +1,5 @@
+package jihong.chapter07_Adapter.Duck;
+
 public class DuckTestDrive {
     public static void main(String[] args) {
         Duck duck = new MallardDuck();
