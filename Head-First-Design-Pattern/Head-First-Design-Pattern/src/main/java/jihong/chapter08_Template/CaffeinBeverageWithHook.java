@@ -1,4 +1,4 @@
-package main.java.jihong.chapter08_Template;
+package jihong.chapter08_Template;
 
 public abstract class CaffeinBeverageWithHook {
 

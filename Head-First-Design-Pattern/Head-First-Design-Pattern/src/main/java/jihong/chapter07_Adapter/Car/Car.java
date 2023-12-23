@@ -1,4 +1,4 @@
-package main.java.jihong.chapter07_Adapter.Car;
+package jihong.chapter07_Adapter.Car;
 
 public class Car {
 //    Engine engine;

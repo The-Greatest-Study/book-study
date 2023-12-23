@@ -1,4 +1,4 @@
-package main.java.jihong.chapter08_Template;
+package jihong.chapter08_Template;
 
 public class BeverageTestDrive {
     public static void main(String[] args) {
