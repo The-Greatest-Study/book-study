@@ -1,11 +1,13 @@
-package jihong.chapter07_Adapter.Duck;
+package jiin.chapter07_adapter;
 
 public class MallardDuck implements Duck{
+    @Override
     public void quack() {
-        System.out.println("꽥");
+        System.out.println("꿱");
     }
 
-    public void fly(){
+    @Override
+    public void fly() {
         System.out.println("날고 있어요!!");
     }
 }

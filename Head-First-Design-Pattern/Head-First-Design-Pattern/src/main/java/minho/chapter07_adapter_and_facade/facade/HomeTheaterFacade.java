@@ -1,15 +1,24 @@
-package jihong.chapter07_Adapter.HomeTheaterFacade;
+package minho.chapter07_adapter_and_facade.facade;
 
 public class HomeTheaterFacade {
+
     Amplifier amp;
     Tuner tuner;
     StreamingPlayer player;
+    CdPlayer cd;
     Projector projector;
     TheaterLights lights;
     Screen screen;
     PopcornPopper popper;
 
-    public HomeTheaterFacade(Amplifier amp, Tuner tuner, StreamingPlayer player, Projector projector, Screen screen, TheaterLights lights, PopcornPopper popper){
+    public HomeTheaterFacade(Amplifier amp,
+                             Tuner tuner,
+                             StreamingPlayer player,
+                             Projector projector,
+                             Screen screen,
+                             TheaterLights lights,
+                             PopcornPopper popper) {
+
         this.amp = amp;
         this.tuner = tuner;
         this.player = player;
@@ -19,8 +28,8 @@ public class HomeTheaterFacade {
         this.popper = popper;
     }
 
-    public void watchMovie(String movie){
-        System.out.println("영화 볼 준비 중");
+    public void watchMovie(final String movie) {
+        System.out.println("Get ready to watch a movie...");
         popper.on();
         popper.pop();
         lights.dim(10);
@@ -29,12 +38,14 @@ public class HomeTheaterFacade {
         projector.wideScreenMode();
         amp.on();
         amp.setStreamingPlayer(player);
+        amp.setSurroundSound();
+        amp.setVolume(5);
         player.on();
         player.play(movie);
     }
 
-    public void endMovie(){
-        System.out.println("홈시어터를 끄는 중");
+    public void endMovie() {
+        System.out.println("Shutting movie theater down...");
         popper.off();
         lights.on();
         screen.up();
@@ -43,4 +54,13 @@ public class HomeTheaterFacade {
         player.stop();
         player.off();
     }
+
+    public void listenToRadio() {
+
+    }
+
+    public void endRadio() {
+
+    }
+
 }
