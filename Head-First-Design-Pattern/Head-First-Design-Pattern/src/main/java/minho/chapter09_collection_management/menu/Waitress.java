@@ -1,6 +1,5 @@
-package minho.chapter09_collection_management;
+package minho.chapter09_collection_management.menu;
 
-import minho.chapter09_collection_management.menu.*;
 import java.util.Iterator;
 import java.util.List;
 

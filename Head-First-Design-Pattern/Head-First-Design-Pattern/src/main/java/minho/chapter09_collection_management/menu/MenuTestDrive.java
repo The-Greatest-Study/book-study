@@ -1,8 +1,4 @@
-package minho.chapter09_collection_management;
-
-import minho.chapter09_collection_management.menu.CafeMenu;
-import minho.chapter09_collection_management.menu.DinerMenu;
-import minho.chapter09_collection_management.menu.PancakeHouseMenu;
+package minho.chapter09_collection_management.menu;
 
 import java.util.Arrays;
 
