@@ -2,10 +2,11 @@ package jihong.chapter03_Decorator.Beverage.Decorator;
 
 import jihong.chapter03_Decorator.Beverage.Beverage;
 
-public class Whip extends CondimentDecorator{
-    public Whip(Beverage beverage){
+public class Whip extends CondimentDecorator {
+    public Whip(Beverage beverage) {
         this.beverage = beverage;
     }
+
     @Override
     public double cost() {
         return beverage.cost() + .10;

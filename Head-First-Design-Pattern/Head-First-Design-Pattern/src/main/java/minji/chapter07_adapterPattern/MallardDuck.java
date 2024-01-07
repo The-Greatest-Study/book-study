@@ -1,6 +1,6 @@
 package minji.chapter07_adapterPattern;
 
-public class MallardDuck implements Duck{
+public class MallardDuck implements Duck {
     @Override
     public void quack() {
         System.out.println("꽥");

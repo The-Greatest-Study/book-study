@@ -5,7 +5,7 @@ import minho.chapter06_encapsulation_of_method_call.Equipments.Light;
 public class LightOffCommand implements Command {
     Light light;
 
-    public LightOffCommand(Light light){
+    public LightOffCommand(Light light) {
         this.light = light;
     }
 

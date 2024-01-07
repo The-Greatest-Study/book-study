@@ -1,22 +1,21 @@
 package jihong.chapter07_Adapter.HomeTheaterFacade;
 
 public class Screen {
-	String description;
+    String description;
 
-	public Screen(String description) {
-		this.description = description;
-	}
+    public Screen(String description) {
+        this.description = description;
+    }
 
-	public void up() {
-		System.out.println(description + " going up");
-	}
+    public void up() {
+        System.out.println(description + " going up");
+    }
 
-	public void down() {
-		System.out.println(description + " going down");
-	}
+    public void down() {
+        System.out.println(description + " going down");
+    }
 
-
-	public String toString() {
-		return description;
-	}
+    public String toString() {
+        return description;
+    }
 }

@@ -12,8 +12,7 @@ public class HomeTheaterTestDrive {
         PopcornPopper popper = new PopcornPopper("Popcorn Popper");
 
         HomeTheaterFacade homeTheater =
-                new HomeTheaterFacade(amp, tuner, player,
-                        projector, screen, lights, popper);
+                new HomeTheaterFacade(amp, tuner, player, projector, screen, lights, popper);
 
         homeTheater.watchMovie("Raiders of the Lost Ark");
         homeTheater.endMovie();

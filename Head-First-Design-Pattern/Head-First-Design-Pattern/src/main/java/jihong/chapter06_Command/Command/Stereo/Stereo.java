@@ -5,22 +5,21 @@ public class Stereo {
     private int volumne;
     private String room;
 
-    public void on(){
+    public void on() {
         System.out.println("오디오가 켜졌습니다");
     }
 
-    public void off(){
+    public void off() {
         System.out.println("오디오가 꺼졌습니다");
     }
 
-    public void setCD(){
+    public void setCD() {}
 
-    }
-    public void setVolume(int volume){
+    public void setVolume(int volume) {
         this.volumne = volume;
     }
 
-    public Stereo(String room){
+    public Stereo(String room) {
         this.room = room;
     }
 }

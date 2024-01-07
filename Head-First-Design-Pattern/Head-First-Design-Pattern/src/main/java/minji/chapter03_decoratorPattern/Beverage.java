@@ -2,7 +2,12 @@ package minji.chapter03_decoratorPattern;
 
 public abstract class Beverage {
 
-    public enum Size {TALL, GRANDE, VENTI};
+    public enum Size {
+        TALL,
+        GRANDE,
+        VENTI
+    };
+
     Size size = Size.TALL;
 
     String description = "제목없음";

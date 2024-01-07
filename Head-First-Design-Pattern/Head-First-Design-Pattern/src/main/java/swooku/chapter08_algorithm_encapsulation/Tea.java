@@ -1,7 +1,7 @@
 package swooku.chapter08_algorithm_encapsulation;
 
-public class Tea extends CaffeineBeverage{
-    
+public class Tea extends CaffeineBeverage {
+
     public void brew() {
         System.out.println("찻잎을 우려내는 중");
     }

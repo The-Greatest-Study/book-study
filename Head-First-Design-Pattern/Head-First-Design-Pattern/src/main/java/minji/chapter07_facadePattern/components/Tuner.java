@@ -28,7 +28,6 @@ public class Tuner {
     public void dim() {
         this.status = TunerStatus.DIM;
         System.out.println(this);
-
     }
 
     public String toString() {

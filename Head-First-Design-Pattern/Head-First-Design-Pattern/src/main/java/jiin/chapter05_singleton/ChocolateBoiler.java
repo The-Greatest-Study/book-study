@@ -21,7 +21,7 @@ public class ChocolateBoiler {
      * 보일러에 우유와 초콜릿을 혼합한 재료를 넣는 method
      */
     public void fill() {
-        if(isEmpty()){
+        if (isEmpty()) {
             empty = false;
             boiled = false;
             System.out.println("filling milk and chocolate");
@@ -32,7 +32,7 @@ public class ChocolateBoiler {
      * 재료를 끓이는 method
      */
     public void boil() {
-        if(!isEmpty() && !isBoiled()) {
+        if (!isEmpty() && !isBoiled()) {
             boiled = true;
             System.out.println("boiling milk and chocolate");
         }
@@ -42,7 +42,7 @@ public class ChocolateBoiler {
      * 끓인 재료를 다음 단계로 넘기는 method
      */
     public void drain() {
-        if(!isEmpty() && isBoiled()){
+        if (!isEmpty() && isBoiled()) {
             empty = true;
             System.out.println("draining milk and chocolate");
         }

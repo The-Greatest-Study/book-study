@@ -1,7 +1,7 @@
 package minho.chapter02_observer;
 
 public class ObserverMain {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         WeatherData weatherData = new WeatherData();
 
         CurrentConditionDisplay currentConditionDisplay = new CurrentConditionDisplay(weatherData);

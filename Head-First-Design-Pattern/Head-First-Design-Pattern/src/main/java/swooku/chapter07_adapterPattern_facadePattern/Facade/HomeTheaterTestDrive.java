@@ -12,10 +12,9 @@ public class HomeTheaterTestDrive {
         PopCornPopper popper = new PopCornPopper();
 
         HomeTheaterFacade homeTheater =
-            new HomeTheaterFacade(amp, tuner, player, projector, lights, screen, popper);
+                new HomeTheaterFacade(amp, tuner, player, projector, lights, screen, popper);
 
         homeTheater.watchMovie("인디아나 존스:레이더스");
         homeTheater.endMovie();
     }
-    
 }

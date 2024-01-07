@@ -68,10 +68,14 @@ public class StreamingPlayer {
 
     @Override
     public String toString() {
-        return "StreamingPlayer{" +
-                "status=" + status +
-                ", mode=" + mode +
-                ", movie='" + movie + '\'' +
-                '}';
+        return "StreamingPlayer{"
+                + "status="
+                + status
+                + ", mode="
+                + mode
+                + ", movie='"
+                + movie
+                + '\''
+                + '}';
     }
 }

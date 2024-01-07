@@ -6,7 +6,7 @@ public class StarBuzzCoffee {
 
     public static void main(String args[]) {
         Beverage beverage = new Espresso();
-        
+
         System.out.println(beverage.getDescription() + " >> 가격($" + beverage.cost() + ")");
 
         Beverage beverage2 = new DarkRoast();
@@ -21,5 +21,4 @@ public class StarBuzzCoffee {
         beverage3 = new Whip(beverage3);
         System.out.println(beverage3.getDescription() + " >> 가격($" + beverage3.cost() + ")");
     }
-
 }

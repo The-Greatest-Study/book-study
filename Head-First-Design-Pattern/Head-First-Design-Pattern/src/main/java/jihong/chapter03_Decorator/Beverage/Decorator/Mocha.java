@@ -2,10 +2,11 @@ package jihong.chapter03_Decorator.Beverage.Decorator;
 
 import jihong.chapter03_Decorator.Beverage.Beverage;
 
-public class Mocha extends CondimentDecorator{
-    public Mocha(Beverage beverage){
+public class Mocha extends CondimentDecorator {
+    public Mocha(Beverage beverage) {
         this.beverage = beverage;
     }
+
     @Override
     public double cost() {
         return beverage.cost() + .20;

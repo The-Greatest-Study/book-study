@@ -1,6 +1,6 @@
 package jiin.chapter07_adapter;
 
-public class MallardDuck implements Duck{
+public class MallardDuck implements Duck {
     @Override
     public void quack() {
         System.out.println("꿱");

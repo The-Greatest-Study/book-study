@@ -6,6 +6,4 @@ import java.util.List;
 public class Example {
 
     List<String> list = new ArrayList<>();
-
 }
-

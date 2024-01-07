@@ -3,7 +3,7 @@ package jiin.chapter04_factory.onMyOwn;
 import lombok.Getter;
 
 @Getter
-public class  Pizza {
+public class Pizza {
     private String name;
     private String style;
     private String dough;
@@ -20,7 +20,7 @@ public class  Pizza {
             this.dough = "thin crust dough";
             this.sauce = "marinara sauce";
             this.cheese = "reggiano cheese";
-            this.veggies = new String[]{"garlic", "onion", "mushroom", "red pepper"};
+            this.veggies = new String[] {"garlic", "onion", "mushroom", "red pepper"};
             this.pepperoni = "sliced pepperoni";
             this.clam = "fresh clams";
         } else if ("Chicago Style".equals(style)) {
@@ -29,7 +29,7 @@ public class  Pizza {
             this.dough = "thick crust dough";
             this.sauce = "plum tomato sauce";
             this.cheese = "mozzarella cheese";
-            this.veggies = new String[]{"eggplant", "spinach", "garlic"};
+            this.veggies = new String[] {"eggplant", "spinach", "garlic"};
             this.pepperoni = "sliced pepperoni";
             this.clam = "frozen clams";
         } else {
@@ -38,16 +38,14 @@ public class  Pizza {
             this.dough = "thin crust dough";
             this.sauce = "plum tomato sauce";
             this.cheese = "mozzarella cheese";
-            this.veggies = new String[]{"garlic", "onion", "mushroom", "red pepper"};
+            this.veggies = new String[] {"garlic", "onion", "mushroom", "red pepper"};
             this.pepperoni = "sliced pepperoni";
             this.clam = "frozen clams";
         }
         ;
     }
 
-    public String fullPizzaName(){
+    public String fullPizzaName() {
         return style + " " + name + " pizza";
     }
-
-
 }

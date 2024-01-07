@@ -2,13 +2,12 @@ package minho.chapter04_factory_pattern.Pizza;
 
 import minho.chapter04_factory_pattern.Ingredients.Factory.IngredientFactory;
 
-public class ClamPizza extends Pizza{
+public class ClamPizza extends Pizza {
     IngredientFactory ingredientFactory;
 
-    public ClamPizza(IngredientFactory ingredientFactory){
+    public ClamPizza(IngredientFactory ingredientFactory) {
         this.ingredientFactory = ingredientFactory;
     }
-
 
     @Override
     public void prepare() {

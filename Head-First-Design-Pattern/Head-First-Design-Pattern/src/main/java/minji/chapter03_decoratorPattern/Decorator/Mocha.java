@@ -2,7 +2,7 @@ package minji.chapter03_decoratorPattern.Decorator;
 
 import minji.chapter03_decoratorPattern.Beverage;
 
-public class Mocha extends CondimentDecorator{
+public class Mocha extends CondimentDecorator {
     public Mocha(Beverage beverage) {
         this.beverage = beverage;
     }
@@ -19,7 +19,6 @@ public class Mocha extends CondimentDecorator{
         }
         return cost;
     }
-
 
     @Override
     public String getDescription() {

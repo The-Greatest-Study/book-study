@@ -1,6 +1,6 @@
 package swooku.chapter03_decoratorPattern.Bevarage;
 
-public class DarkRoast extends Beverage{
+public class DarkRoast extends Beverage {
     public DarkRoast() {
         description = "[다크 로스트]";
     }

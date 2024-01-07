@@ -11,10 +11,7 @@ public class Duck implements Comparable<Duck> {
 
     @Override
     public String toString() {
-        return "Duck{" +
-                "이름='" + name + '\'' +
-                ", 체중=" + weight +
-                '}';
+        return "Duck{" + "이름='" + name + '\'' + ", 체중=" + weight + '}';
     }
 
     @Override

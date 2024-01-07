@@ -1,6 +1,5 @@
 package minji.chapter04_factoryPattern.pizza;
 
-
 import minji.chapter04_factoryPattern.ingredients.*;
 
 public abstract class Pizza {
@@ -38,5 +37,6 @@ public abstract class Pizza {
 
     public String toString() {
         return "이 피자는 ==> " + this.getName();
-    };
+    }
+    ;
 }

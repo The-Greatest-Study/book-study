@@ -1,11 +1,10 @@
 package jiin.chapter08_template_method.example;
 
-
-import javax.swing.JFrame;
 import java.awt.Graphics;
+import javax.swing.JFrame;
 
 public class MyFrame extends JFrame {
-    public MyFrame(String title){
+    public MyFrame(String title) {
         super(title);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 

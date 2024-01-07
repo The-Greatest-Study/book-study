@@ -3,8 +3,8 @@ package jiin.chapter04_factory.pizzaStore;
 import jiin.chapter04_factory.pizza.CheesePizza;
 import jiin.chapter04_factory.pizza.ClamPizza;
 import jiin.chapter04_factory.pizza.PepperoniPizza;
-import jiin.chapter04_factory.pizza.VeggiePizza;
 import jiin.chapter04_factory.pizza.Pizza;
+import jiin.chapter04_factory.pizza.VeggiePizza;
 
 public class NYPizzaStore extends PizzaStore {
 

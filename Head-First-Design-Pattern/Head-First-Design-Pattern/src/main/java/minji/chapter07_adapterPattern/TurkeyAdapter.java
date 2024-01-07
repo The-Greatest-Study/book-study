@@ -2,7 +2,7 @@ package minji.chapter07_adapterPattern;
 
 // Adapter class will turn an object to act like a different object
 // In this case, Turkey -> Duck
-public class TurkeyAdapter implements Duck{
+public class TurkeyAdapter implements Duck {
     Turkey turkey;
 
     public TurkeyAdapter(Turkey turkey) {
@@ -16,7 +16,7 @@ public class TurkeyAdapter implements Duck{
 
     @Override
     public void fly() {
-        for(int i=0; i<5; i++) {
+        for (int i = 0; i < 5; i++) {
             turkey.fly();
         }
     }

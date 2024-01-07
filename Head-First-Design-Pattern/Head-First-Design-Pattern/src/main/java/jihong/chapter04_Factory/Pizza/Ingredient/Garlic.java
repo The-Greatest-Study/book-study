@@ -1,4 +1,3 @@
 package jihong.chapter04_Factory.Pizza.Ingredient;
 
-public class Garlic extends Veggies {
-}
+public class Garlic extends Veggies {}

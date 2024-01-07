@@ -1,11 +1,10 @@
 package minji.chapter06_commandPattern.Commands;
 
 import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 import minji.chapter06_commandPattern.Receivers.CeilingFan;
 
 @AllArgsConstructor
-public class CeilingFanOnCommand implements Command{
+public class CeilingFanOnCommand implements Command {
 
     CeilingFan ceilingFan;
 

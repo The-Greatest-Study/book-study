@@ -9,12 +9,14 @@ public class HomeTheaterFacade {
     Screen screen;
     PopCornPopper popper;
 
-    public HomeTheaterFacade(Amplifier amp, Tuner tuner,
-    StreamingPlayer player,
-    Projector projector,
-    TheaterLights lights,
-    Screen screen,
-    PopCornPopper popper) {
+    public HomeTheaterFacade(
+            Amplifier amp,
+            Tuner tuner,
+            StreamingPlayer player,
+            Projector projector,
+            TheaterLights lights,
+            Screen screen,
+            PopCornPopper popper) {
         this.amp = amp;
         this.tuner = tuner;
         this.player = player;
@@ -38,7 +40,7 @@ public class HomeTheaterFacade {
         player.on();
         player.play(movie);
     }
-    
+
     public void endMovie() {
         System.out.println("홈시어터를 끄는 중");
         popper.off();

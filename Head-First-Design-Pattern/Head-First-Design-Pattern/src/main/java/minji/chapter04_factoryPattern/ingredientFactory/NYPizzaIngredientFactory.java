@@ -2,7 +2,7 @@ package minji.chapter04_factoryPattern.ingredientFactory;
 
 import minji.chapter04_factoryPattern.ingredients.*;
 
-public class NYPizzaIngredientFactory implements PizzaIngredientFactory{
+public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
     @Override
     public Dough getDough() {
         return new ThinCrustDough();
@@ -25,7 +25,7 @@ public class NYPizzaIngredientFactory implements PizzaIngredientFactory{
 
     @Override
     public Veggies[] getVeggies() {
-        Veggies veggies[] = { new Garlic(), new Onion(), new Mushroom(), new RedPepper() };
+        Veggies veggies[] = {new Garlic(), new Onion(), new Mushroom(), new RedPepper()};
         return veggies;
     }
 

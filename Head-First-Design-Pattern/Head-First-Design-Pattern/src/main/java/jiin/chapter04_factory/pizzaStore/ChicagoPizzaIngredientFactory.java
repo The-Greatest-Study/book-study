@@ -17,8 +17,7 @@ import jiin.chapter04_factory.pizza.pizzaIngredient.vegitable.Vegitable;
 import lombok.Getter;
 
 public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
-    @Getter
-    private String pizzaStyle = "시카고 스타일";
+    @Getter private String pizzaStyle = "시카고 스타일";
 
     @Override
     public Dough createDough() {

@@ -12,7 +12,6 @@ public class Amplifier {
 
     public void setStreamingPlayer(StreamingPlayer player) {
         System.out.println("앰프를 스트리밍 플레이어와 연결합니다.");
-        
     }
 
     public void setSurroundSound() {

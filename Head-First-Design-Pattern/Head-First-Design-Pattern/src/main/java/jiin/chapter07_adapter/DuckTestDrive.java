@@ -1,7 +1,7 @@
 package jiin.chapter07_adapter;
 
 public class DuckTestDrive {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Duck duck = new MallardDuck();
 
         Turkey turkey = new WildTurkey();
@@ -18,7 +18,7 @@ public class DuckTestDrive {
         testDuck(turkeyAdapter);
     }
 
-    public static void testDuck(Duck duck){
+    public static void testDuck(Duck duck) {
         duck.quack();
         duck.fly();
     }

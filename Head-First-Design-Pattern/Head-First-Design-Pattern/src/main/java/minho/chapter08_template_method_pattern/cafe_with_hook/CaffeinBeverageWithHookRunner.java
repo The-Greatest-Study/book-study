@@ -7,5 +7,4 @@ public class CaffeinBeverageWithHookRunner {
         CoffeeWithHook coffeeWithHook = new CoffeeWithHook();
         coffeeWithHook.prepareRecipe();
     }
-
 }

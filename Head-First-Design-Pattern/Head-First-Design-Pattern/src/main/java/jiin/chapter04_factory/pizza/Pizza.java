@@ -11,12 +11,11 @@ import lombok.Setter;
 
 @Getter
 public abstract class Pizza {
-    @Setter
-    protected String name;
+    @Setter protected String name;
     // Factory Method
-//    String dough;
-//    String sauce;
-//    List<String> toppings = new ArrayList<>();
+    //    String dough;
+    //    String sauce;
+    //    List<String> toppings = new ArrayList<>();
 
     protected Dough dough;
     protected Sauce sauce;

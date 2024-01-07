@@ -3,9 +3,8 @@ package minji.chapter08_templateMethodPattern;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Locale;
 
-public class Coffee extends CaffeineBeverage{
+public class Coffee extends CaffeineBeverage {
 
     // @Override annotation을 꼭 넣어야 할까?
     // https://stackoverflow.com/questions/1005898/should-i-add-an-override-annotation-when-implementing-abstract-methods-in-java
@@ -48,5 +47,4 @@ public class Coffee extends CaffeineBeverage{
         }
         return answer;
     }
-
 }

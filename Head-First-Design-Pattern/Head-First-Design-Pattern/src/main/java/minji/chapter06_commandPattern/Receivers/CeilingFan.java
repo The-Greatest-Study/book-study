@@ -16,5 +16,4 @@ public class CeilingFan {
     public void off() {
         System.out.println(location + " Ceiling Fan was turned off");
     }
-
 }

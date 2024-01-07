@@ -8,8 +8,7 @@ public class CeilingFan {
     public static final int LOW = 1;
     public static final int OFF = 0;
     String location;
-    @Getter
-    int speed;
+    @Getter int speed;
 
     public CeilingFan(String location) {
         this.location = location;

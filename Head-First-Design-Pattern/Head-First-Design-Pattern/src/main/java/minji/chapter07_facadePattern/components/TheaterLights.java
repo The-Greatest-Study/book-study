@@ -28,7 +28,6 @@ public class TheaterLights {
     public void dim(Integer brightness) {
         this.brightness = brightness;
         System.out.println(this);
-
     }
 
     public void setStatus(Level status) {
@@ -37,9 +36,6 @@ public class TheaterLights {
 
     @Override
     public String toString() {
-        return "TheaterLights{" +
-                "status=" + status +
-                ", brightness=" + brightness +
-                '}';
+        return "TheaterLights{" + "status=" + status + ", brightness=" + brightness + '}';
     }
 }

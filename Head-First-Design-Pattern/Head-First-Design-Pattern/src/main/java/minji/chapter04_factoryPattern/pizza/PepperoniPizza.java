@@ -2,7 +2,7 @@ package minji.chapter04_factoryPattern.pizza;
 
 import minji.chapter04_factoryPattern.ingredientFactory.PizzaIngredientFactory;
 
-public class PepperoniPizza extends Pizza{
+public class PepperoniPizza extends Pizza {
     PizzaIngredientFactory ingredientFactory;
 
     public PepperoniPizza(PizzaIngredientFactory ingredientFactory) {
@@ -17,6 +17,5 @@ public class PepperoniPizza extends Pizza{
         sauce = ingredientFactory.getSauce();
         cheese = ingredientFactory.getCheese();
         pepperoni = ingredientFactory.getPepperoni();
-
     }
 }

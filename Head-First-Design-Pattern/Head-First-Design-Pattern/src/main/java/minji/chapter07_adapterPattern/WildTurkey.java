@@ -1,6 +1,6 @@
 package minji.chapter07_adapterPattern;
 
-public class WildTurkey implements Turkey{
+public class WildTurkey implements Turkey {
     @Override
     public void gobble() {
         System.out.println("골골");

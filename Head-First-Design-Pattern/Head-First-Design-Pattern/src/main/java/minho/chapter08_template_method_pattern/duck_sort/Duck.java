@@ -3,7 +3,7 @@ package minho.chapter08_template_method_pattern.duck_sort;
 import lombok.Getter;
 
 @Getter
-public class Duck implements Comparable<Duck>{
+public class Duck implements Comparable<Duck> {
 
     String name;
     int weight;
@@ -21,11 +21,11 @@ public class Duck implements Comparable<Duck>{
     @Override
     public int compareTo(Duck otherDuck) {
 
-        if(this.weight < otherDuck.getWeight()) {
+        if (this.weight < otherDuck.getWeight()) {
             return -1;
-        } else if(this.weight == otherDuck.getWeight()) {
+        } else if (this.weight == otherDuck.getWeight()) {
             return 0;
-        } else{
+        } else {
             return 1;
         }
     }

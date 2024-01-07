@@ -1,6 +1,6 @@
 package jiin.chapter08_template_method.caffeine;
 
-public class CaffeineCoffee extends CaffeineBeverage{
+public class CaffeineCoffee extends CaffeineBeverage {
     @Override
     void brew() {
         System.out.println("필터로 커피를 우려내는 중");

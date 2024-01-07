@@ -16,7 +16,6 @@ public class Screen {
         System.out.println(description + " going down");
     }
 
-
     public String toString() {
         return description;
     }

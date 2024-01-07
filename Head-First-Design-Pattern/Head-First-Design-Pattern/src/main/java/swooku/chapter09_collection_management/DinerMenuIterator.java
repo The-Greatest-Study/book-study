@@ -11,13 +11,13 @@ public class DinerMenuIterator implements Iterator<MenuItem> {
     }
 
     public MenuItem next() {
-        MenuItem menuItem = items[position];  
+        MenuItem menuItem = items[position];
         position = position + 1;
-        return menuItem;     
+        return menuItem;
     }
 
     public boolean hasNext() {
-        if(position >= items.length || items[position] == null) {
+        if (position >= items.length || items[position] == null) {
             return false;
         } else {
             return true;

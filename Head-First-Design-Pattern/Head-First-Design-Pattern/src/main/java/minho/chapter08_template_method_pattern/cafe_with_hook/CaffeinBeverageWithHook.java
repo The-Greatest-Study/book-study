@@ -6,7 +6,7 @@ public abstract class CaffeinBeverageWithHook {
         this.boilWater();
         this.brew();
         this.popInCup();
-        if(this.customerWantsCondinents()){
+        if (this.customerWantsCondinents()) {
             this.addCondiments();
         }
     }
@@ -26,5 +26,4 @@ public abstract class CaffeinBeverageWithHook {
     void boilWater() {
         System.out.println("물 끓이는 중");
     }
-
 }

@@ -4,8 +4,7 @@ public class _3InitializerSingleton {
 
     private static _3InitializerSingleton uniqueInstance = new _3InitializerSingleton();
 
-    private _3InitializerSingleton(){
-    }
+    private _3InitializerSingleton() {}
 
     /**
      * 정적 초기화
@@ -13,10 +12,9 @@ public class _3InitializerSingleton {
      * - 사용하지 않는 경우에 불필요한 메모리 차지
      * @return
      */
-    public static synchronized _3InitializerSingleton getInstance(){
+    public static synchronized _3InitializerSingleton getInstance() {
         return uniqueInstance;
     }
 
-
-    //기타 코드..
+    // 기타 코드..
 }

@@ -4,7 +4,7 @@ import minho.chapter04_factory_pattern.Pizza.Pizza;
 
 public abstract class PizzaStore {
 
-    public Pizza orderPizza(String type){
+    public Pizza orderPizza(String type) {
         Pizza pizza;
 
         pizza = createPizza(type);

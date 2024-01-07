@@ -13,7 +13,7 @@ public class DuckTestDrive {
 
         System.out.println("\n오리가 말하길");
         testDuck(duck);
-        
+
         System.out.println("\n칠면조 어뎁터가 말하길");
         testDuck(turkeyAdapter);
     }

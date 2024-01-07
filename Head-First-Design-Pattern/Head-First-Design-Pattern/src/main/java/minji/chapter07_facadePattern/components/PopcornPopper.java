@@ -31,8 +31,6 @@ public class PopcornPopper {
 
     @Override
     public String toString() {
-        return "PopcornPopper{" +
-                "status=" + status +
-                '}';
+        return "PopcornPopper{" + "status=" + status + '}';
     }
 }

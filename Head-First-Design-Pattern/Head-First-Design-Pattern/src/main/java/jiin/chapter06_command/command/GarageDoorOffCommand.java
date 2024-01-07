@@ -2,7 +2,7 @@ package jiin.chapter06_command.command;
 
 import jiin.chapter06_command.home.GarageDoor;
 
-public class GarageDoorOffCommand implements Command{
+public class GarageDoorOffCommand implements Command {
     private GarageDoor garageDoor;
 
     public GarageDoorOffCommand(GarageDoor garageDoor) {

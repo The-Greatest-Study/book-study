@@ -9,7 +9,14 @@ public class HomeTheaterFacade {
     Screen screen;
     PopcornPopper popper;
 
-    public HomeTheaterFacade(Amplifier amp, Tuner tuner, StreamingPlayer player, Projector projector, Screen screen, TheaterLights lights, PopcornPopper popper){
+    public HomeTheaterFacade(
+            Amplifier amp,
+            Tuner tuner,
+            StreamingPlayer player,
+            Projector projector,
+            Screen screen,
+            TheaterLights lights,
+            PopcornPopper popper) {
         this.amp = amp;
         this.tuner = tuner;
         this.player = player;
@@ -19,7 +26,7 @@ public class HomeTheaterFacade {
         this.popper = popper;
     }
 
-    public void watchMovie(String movie){
+    public void watchMovie(String movie) {
         System.out.println("영화 볼 준비 중");
         popper.on();
         popper.pop();
@@ -33,7 +40,7 @@ public class HomeTheaterFacade {
         player.play(movie);
     }
 
-    public void endMovie(){
+    public void endMovie() {
         System.out.println("홈시어터를 끄는 중");
         popper.off();
         lights.on();

@@ -3,7 +3,7 @@ package minji.chapter07_adapterPattern.enumerator;
 import java.util.Enumeration;
 import java.util.Iterator;
 
-public class EnumerationIterator implements Iterator<Object>  {
+public class EnumerationIterator implements Iterator<Object> {
     Enumeration<?> enumeration;
 
     public EnumerationIterator(Enumeration<?> enumeration) {
