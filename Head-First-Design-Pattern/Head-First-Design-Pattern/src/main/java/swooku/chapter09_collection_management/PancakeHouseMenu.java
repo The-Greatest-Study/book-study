@@ -1,8 +1,9 @@
 package swooku.chapter09_collection_management;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
-public class PancakeHouseMenu {
+public class PancakeHouseMenu implements Menu{
     ArrayList<MenuItem> menuItems;
 
     public PancakeHouseMenu() {
@@ -37,9 +38,14 @@ public class PancakeHouseMenu {
     public ArrayList<MenuItem> getMenuItems() {
         return menuItems;
     }
-
+    /* 
     public Iterator createIterator() {
         return new PancakeHouseMenuIterator(menuItems);
+    }
+    */
+
+    public Iterator createIterator() {
+        return menuItems.iterator();
     }
 
     // 기타 메뉴 관련 메소드

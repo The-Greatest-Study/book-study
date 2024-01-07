@@ -1,6 +1,8 @@
 package swooku.chapter09_collection_management;
 
-public class DinerMenu {
+import java.util.Iterator;
+
+public class DinerMenu implements Menu {
     static final int MAX_ITEMS = 6;
     int numberOfItems = 0;
     MenuItem[] menuItems;
@@ -43,9 +45,9 @@ public class DinerMenu {
     public MenuItem[] getMenuItems() {
         return menuItems;
     }
-
+    
     public Iterator createIterator() {
-            return new DinerMenuIterator(menuItems);
+        return new DinerMenuIterator(menuItems);
     }
 
     // 기타 메뉴 관련 메소드

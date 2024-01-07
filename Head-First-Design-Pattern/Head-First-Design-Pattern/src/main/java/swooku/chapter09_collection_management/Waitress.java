@@ -1,10 +1,12 @@
 package swooku.chapter09_collection_management;
 
-public class Waitress {
-    PancakeHouseMenu pancakeHouseMenu;
-    DinerMenu dinerMenu;
+import java.util.Iterator;
 
-    public Waitress(PancakeHouseMenu pancakeHouseMenu, DinerMenu dinerMenu) {
+public class Waitress {
+    Menu pancakeHouseMenu;
+    Menu dinerMenu;
+
+    public Waitress(Menu pancakeHouseMenu, Menu dinerMenu) {
         this.pancakeHouseMenu = pancakeHouseMenu;
         this.dinerMenu = dinerMenu;
     }
@@ -21,7 +23,7 @@ public class Waitress {
 
     private void printMenu(Iterator iterator) {
         while(iterator.hasNext()) {
-            MenuItem menuItem = iterator.next();
+            MenuItem menuItem = (MenuItem) iterator.next();
             System.out.println(menuItem.getName() + ", ");
             System.out.println(menuItem.getPrice() + " -- ");
             System.out.println(menuItem.getDescription());

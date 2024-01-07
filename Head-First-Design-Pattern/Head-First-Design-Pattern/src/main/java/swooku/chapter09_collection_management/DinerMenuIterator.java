@@ -1,6 +1,8 @@
 package swooku.chapter09_collection_management;
 
-public class DinerMenuIterator implements Iterator{
+import java.util.Iterator;
+
+public class DinerMenuIterator implements Iterator<MenuItem> {
     MenuItem[] items;
     int position = 0;
 
@@ -20,5 +22,9 @@ public class DinerMenuIterator implements Iterator{
         } else {
             return true;
         }
+    }
+
+    public void remove() {
+        throw new UnsupportedOperationException("메뉴 항목은 지우면 안 됩니다.");
     }
 }
