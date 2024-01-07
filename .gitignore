@@ -99,3 +99,7 @@ hs_err_pid*
 replay_pid*
 
 # End of https://www.toptal.com/developers/gitignore/api/java
+Head-First-Design-Pattern/Head-First-Design-Pattern/gradlew
+Head-First-Design-Pattern/Head-First-Design-Pattern/gradlew.bat
+Head-First-Design-Pattern/Head-First-Design-Pattern/gradle/wrapper/gradle-wrapper.jar
+Head-First-Design-Pattern/Head-First-Design-Pattern/gradle/wrapper/gradle-wrapper.properties
