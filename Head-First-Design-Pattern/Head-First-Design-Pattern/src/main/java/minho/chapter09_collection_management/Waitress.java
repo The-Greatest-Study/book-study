@@ -7,26 +7,32 @@ public class Waitress {
 
     Menu pancakeHouseMenu;
     Menu dinerMenu;
+    CafeMenu cafeMenu;
 
     // 생성자를 private화 하여 외부에서 생성자 호출 차단
-    private Waitress(Menu pancakeHouseMenu, Menu dinerMenu) {
+    private Waitress(Menu pancakeHouseMenu, Menu dinerMenu, CafeMenu cafeMenu) {
         this.pancakeHouseMenu = pancakeHouseMenu;
         this.dinerMenu = dinerMenu;
+        this.cafeMenu = cafeMenu;
     }
 
-    public static Waitress of(PancakeHouseMenu pancakeHouseMenu, DinerMenu dinerMenu){
-        return new Waitress((Menu) pancakeHouseMenu, (Menu)dinerMenu);
+    public static Waitress of(PancakeHouseMenu pancakeHouseMenu, DinerMenu dinerMenu, CafeMenu cafeMenu){
+        return new Waitress(pancakeHouseMenu, dinerMenu, cafeMenu);
     }
 
     public void printMenu() {
         Iterator<MenuItem> pancakeIterator = pancakeHouseMenu.createIterator();
         Iterator<MenuItem> dinnerIterator = dinerMenu.createIterator();
+        Iterator<MenuItem> cafeIterator = cafeMenu.createIterator();
 
         System.out.print("메뉴\n----\n아침 메뉴\n");
         printMenu(pancakeIterator);
 
         System.out.print("\n점심 메뉴\n");
         printMenu(dinnerIterator);
+
+        System.out.print("\n저녁 메뉴\n");
+        printMenu(cafeIterator);
     }
 
     // 오버로드된 printMenu 메소드 활용
