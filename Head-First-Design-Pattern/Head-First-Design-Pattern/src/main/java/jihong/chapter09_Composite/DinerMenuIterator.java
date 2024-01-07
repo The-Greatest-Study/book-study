@@ -1,4 +1,5 @@
-package jihong.chapter09_Collection;
+package jihong.chapter09_Composite;
+
 
 public class DinerMenuIterator implements Iterator {
     MenuItem[] items;
