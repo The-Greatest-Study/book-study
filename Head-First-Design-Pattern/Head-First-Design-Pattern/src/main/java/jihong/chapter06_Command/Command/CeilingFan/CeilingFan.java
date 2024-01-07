@@ -19,22 +19,21 @@ public class CeilingFan {
 
     public void high() {
         speed = HIGH;
-        System.out.println(this.location + " 선풍기 속도가 HIGH로 설정되었습니다" );
+        System.out.println(this.location + " 선풍기 속도가 HIGH로 설정되었습니다");
     }
 
     public void medium() {
         speed = MEDIUM;
-        System.out.println(this.location + " 선풍기 속도가 MEDIUM으로 설정되었습니다" );
+        System.out.println(this.location + " 선풍기 속도가 MEDIUM으로 설정되었습니다");
     }
 
     public void low() {
         speed = LOW;
-        System.out.println(this.location + " 선풍기 속도가 LOW로 설정되었습니다" );
+        System.out.println(this.location + " 선풍기 속도가 LOW로 설정되었습니다");
     }
 
     public void off() {
         speed = OFF;
-        System.out.println(this.location + " 선풍기가 종료되었습니다" );
+        System.out.println(this.location + " 선풍기가 종료되었습니다");
     }
-
 }

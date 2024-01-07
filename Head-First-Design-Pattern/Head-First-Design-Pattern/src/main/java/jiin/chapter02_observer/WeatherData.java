@@ -1,21 +1,17 @@
 package jiin.chapter02_observer;
 
-import lombok.Getter;
-
 import java.util.ArrayList;
 import java.util.List;
+import lombok.Getter;
 
 public class WeatherData implements Subject {
     private List<Observer> observers;
 
-    @Getter
-    private float temperature;
+    @Getter private float temperature;
 
-    @Getter
-    private float humidity;
+    @Getter private float humidity;
 
-    @Getter
-    private float pressure;
+    @Getter private float pressure;
 
     public WeatherData() {
         observers = new ArrayList<>();
@@ -33,7 +29,7 @@ public class WeatherData implements Subject {
 
     @Override
     public void notifyObservers() {
-        for(Observer observer : observers){
+        for (Observer observer : observers) {
             observer.update();
         }
     }

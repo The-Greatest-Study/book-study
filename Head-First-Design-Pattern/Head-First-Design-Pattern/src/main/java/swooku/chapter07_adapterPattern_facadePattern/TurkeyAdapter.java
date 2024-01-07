@@ -2,7 +2,7 @@ package swooku.chapter07_adapterPattern_facadePattern;
 
 public class TurkeyAdapter implements Duck {
     Turkey turkey;
-    
+
     public TurkeyAdapter(Turkey turkey) {
         this.turkey = turkey;
     }
@@ -12,7 +12,7 @@ public class TurkeyAdapter implements Duck {
     }
 
     public void fly() {
-        for(int i = 0; i < 5; i++) {
+        for (int i = 0; i < 5; i++) {
             turkey.fly();
         }
     }

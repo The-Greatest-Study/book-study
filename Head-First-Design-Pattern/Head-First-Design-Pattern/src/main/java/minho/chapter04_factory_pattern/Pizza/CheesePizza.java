@@ -2,11 +2,11 @@ package minho.chapter04_factory_pattern.Pizza;
 
 import minho.chapter04_factory_pattern.Ingredients.Factory.IngredientFactory;
 
-public class CheesePizza extends Pizza{
+public class CheesePizza extends Pizza {
 
     IngredientFactory ingredientFactory;
 
-    public CheesePizza(IngredientFactory ingredientFactory){
+    public CheesePizza(IngredientFactory ingredientFactory) {
         this.ingredientFactory = ingredientFactory;
     }
 

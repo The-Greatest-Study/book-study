@@ -29,25 +29,23 @@ public class StatisticsDisplay implements Observer, DisplayElement {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd");
         String today = dateFormat.format(new Date());
 
-        if(yyyymmdd.compareTo(today) < 0){
+        if (yyyymmdd.compareTo(today) < 0) {
             yyyymmdd = today;
             temperatureList.clear();
         }
 
         temperatureList.add(weatherData.getTemperature());
 
-        averageTemperature = (float) temperatureList.stream()
-                .mapToDouble(Float::doubleValue)
-                .average()
-                .orElse(Double.NaN);
+        averageTemperature =
+                (float)
+                        temperatureList.stream()
+                                .mapToDouble(Float::doubleValue)
+                                .average()
+                                .orElse(Double.NaN);
 
-        minTemperature = temperatureList.stream()
-                .min(Float::compareTo)
-                .orElse(Float.MAX_VALUE);
+        minTemperature = temperatureList.stream().min(Float::compareTo).orElse(Float.MAX_VALUE);
 
-        maxTemperature = temperatureList.stream()
-                .max(Float::compareTo)
-                .orElse(Float.MIN_VALUE);
+        maxTemperature = temperatureList.stream().max(Float::compareTo).orElse(Float.MIN_VALUE);
 
         display();
     }

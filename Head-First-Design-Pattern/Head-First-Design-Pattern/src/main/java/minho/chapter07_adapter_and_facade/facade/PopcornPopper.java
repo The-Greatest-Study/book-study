@@ -20,7 +20,6 @@ public class PopcornPopper {
         System.out.println(description + " popping popcorn!");
     }
 
-
     public String toString() {
         return description;
     }

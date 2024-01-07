@@ -1,7 +1,7 @@
 package minji.chapter08_templateMethodPattern;
 
-import javax.swing.*;
 import java.awt.*;
+import javax.swing.*;
 
 public class MyFrame extends JFrame {
     public MyFrame(String title) {

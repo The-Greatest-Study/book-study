@@ -23,6 +23,5 @@ public class Soy extends CondimentDecorator {
     @Override
     public String getDescription() {
         return beverage.getDescription() + ", 두유";
-
     }
 }

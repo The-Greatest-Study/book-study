@@ -2,7 +2,7 @@ package minji.chapter04_factoryPattern.pizza;
 
 import minji.chapter04_factoryPattern.ingredientFactory.PizzaIngredientFactory;
 
-public class CheesePizza extends Pizza{
+public class CheesePizza extends Pizza {
 
     PizzaIngredientFactory ingredientFactory;
 

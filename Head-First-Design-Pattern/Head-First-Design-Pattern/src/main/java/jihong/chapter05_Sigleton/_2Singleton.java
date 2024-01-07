@@ -6,7 +6,7 @@ public class _2Singleton {
 
     private static _2Singleton uniqueInstance;
 
-    private _2Singleton(){
+    private _2Singleton() {
         empty = true;
         boiled = false;
     }
@@ -19,13 +19,12 @@ public class _2Singleton {
      * - 성능 저하 (100배)
      * @return
      */
-    public static synchronized _2Singleton getInstance(){
-        if(uniqueInstance == null){
+    public static synchronized _2Singleton getInstance() {
+        if (uniqueInstance == null) {
             uniqueInstance = new _2Singleton();
         }
         return uniqueInstance;
     }
 
-
-    //기타 코드..
+    // 기타 코드..
 }

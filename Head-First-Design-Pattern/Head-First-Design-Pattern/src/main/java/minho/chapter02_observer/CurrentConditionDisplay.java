@@ -1,6 +1,6 @@
 package minho.chapter02_observer;
 
-public class CurrentConditionDisplay implements Observer, DisplayElement{
+public class CurrentConditionDisplay implements Observer, DisplayElement {
     private WeatherData weatherData;
     private float temperature;
     private float humidity;
@@ -12,8 +12,13 @@ public class CurrentConditionDisplay implements Observer, DisplayElement{
 
     @Override
     public void display() {
-        final String msg = new StringBuilder("현재 상태 : 온도 ")
-                .append(temperature).append("F, 습도 ").append(humidity).append("%").toString();
+        final String msg =
+                new StringBuilder("현재 상태 : 온도 ")
+                        .append(temperature)
+                        .append("F, 습도 ")
+                        .append(humidity)
+                        .append("%")
+                        .toString();
         System.out.println(msg);
     }
 

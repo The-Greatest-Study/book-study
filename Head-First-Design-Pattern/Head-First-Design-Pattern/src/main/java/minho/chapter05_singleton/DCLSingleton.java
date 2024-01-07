@@ -4,12 +4,12 @@ import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 public class DCLSingleton {
-    private volatile static DCLSingleton dclSingleton;
+    private static volatile DCLSingleton dclSingleton;
 
-    private static DCLSingleton getInstance(){
-        if(dclSingleton == null){
+    private static DCLSingleton getInstance() {
+        if (dclSingleton == null) {
             synchronized (DCLSingleton.class) {
-                if(dclSingleton == null) {
+                if (dclSingleton == null) {
                     dclSingleton = new DCLSingleton();
                 }
             }

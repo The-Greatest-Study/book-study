@@ -1,6 +1,5 @@
 package minho.chapter04_factory_pattern;
 
-
 import minho.chapter04_factory_pattern.PizzaStore.ChicagoPizzaStore;
 import minho.chapter04_factory_pattern.PizzaStore.NYPizzaStore;
 import minho.chapter04_factory_pattern.PizzaStore.PizzaStore;

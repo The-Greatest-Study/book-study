@@ -20,7 +20,4 @@ public abstract class CaffeinBeverage {
     void boilWater() {
         System.out.println("물 끓이는 중");
     }
-
-
-
 }

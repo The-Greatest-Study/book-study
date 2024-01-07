@@ -28,10 +28,12 @@ public class StreamingPlayer {
 
     public void play(int chapter) {
         if (movie == null) {
-            System.out.println(description + " can't play chapter " + chapter + " no movie selected");
+            System.out.println(
+                    description + " can't play chapter " + chapter + " no movie selected");
         } else {
             currentChapter = chapter;
-            System.out.println(description + " playing chapter " + currentChapter + " of \"" + movie + "\"");
+            System.out.println(
+                    description + " playing chapter " + currentChapter + " of \"" + movie + "\"");
         }
     }
 

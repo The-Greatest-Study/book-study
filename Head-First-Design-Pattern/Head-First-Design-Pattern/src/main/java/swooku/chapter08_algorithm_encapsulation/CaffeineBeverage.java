@@ -1,7 +1,7 @@
 package swooku.chapter08_algorithm_encapsulation;
 
 public abstract class CaffeineBeverage {
-    
+
     final void prepareRecipe() {
         boilWater();
         brew();

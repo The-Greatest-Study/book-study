@@ -1,11 +1,11 @@
 package jihong.chapter07_Adapter.Duck;
 
 public class WildTurkey implements Turkey {
-    public void gobble(){
+    public void gobble() {
         System.out.println("골골");
     }
 
-    public void fly(){
+    public void fly() {
         System.out.println("짧은 거리를 날고 있어요!");
     }
 }

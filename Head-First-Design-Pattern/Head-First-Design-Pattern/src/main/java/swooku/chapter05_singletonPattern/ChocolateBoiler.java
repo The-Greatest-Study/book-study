@@ -3,20 +3,20 @@ package swooku.chapter05_singletonPattern;
 public class ChocolateBoiler {
     private boolean empty;
     private boolean boiled;
-    //private static ChocolateBoiler uniqueInstance;
+    // private static ChocolateBoiler uniqueInstance;
     // private static ChocolateBoiler uniqueInstance = new ChocolateBoiler();
-    private volatile static ChocolateBoiler uniqueInstance;
+    private static volatile ChocolateBoiler uniqueInstance;
 
     public static ChocolateBoiler getInstance() {
-        if(uniqueInstance == null) {
+        if (uniqueInstance == null) {
             synchronized (ChocolateBoiler.class) {
-                if(uniqueInstance == null){
+                if (uniqueInstance == null) {
                     uniqueInstance = new ChocolateBoiler();
                 }
             }
         }
         return uniqueInstance;
-    }    
+    }
 
     private ChocolateBoiler() {
         empty = true;
@@ -24,20 +24,20 @@ public class ChocolateBoiler {
     }
 
     public void fill() {
-        if(isEmpty()) {
+        if (isEmpty()) {
             empty = false;
             boiled = false;
         }
     }
 
     public void drain() {
-        if(!isEmpty() && isBoiled()) {
+        if (!isEmpty() && isBoiled()) {
             empty = true;
         }
     }
 
     public void boil() {
-        if(!isEmpty() && !isBoiled()) {
+        if (!isEmpty() && !isBoiled()) {
             boiled = true;
         }
     }
@@ -49,7 +49,7 @@ public class ChocolateBoiler {
     public boolean isBoiled() {
         return boiled;
     }
-    
+
     @Override
     public String toString() {
         System.out.println("empty: " + empty + ", boiled: " + boiled);

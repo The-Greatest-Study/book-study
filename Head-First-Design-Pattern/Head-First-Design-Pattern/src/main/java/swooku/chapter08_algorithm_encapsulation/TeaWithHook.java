@@ -16,7 +16,7 @@ public class TeaWithHook extends CaffeineBeaverageWithHook {
     public boolean customerWantsCondiments() {
         String answer = getUserInput();
 
-        if(answer.toLowerCase().startsWith("y")) {
+        if (answer.toLowerCase().startsWith("y")) {
             return true;
         } else return false;
     }
@@ -29,11 +29,11 @@ public class TeaWithHook extends CaffeineBeaverageWithHook {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         try {
             answer = in.readLine();
-        } catch(IOException ioe) {
+        } catch (IOException ioe) {
             System.err.println("IO 오류");
         }
 
-        if(answer == null) {
+        if (answer == null) {
             return "no";
         }
         return answer;

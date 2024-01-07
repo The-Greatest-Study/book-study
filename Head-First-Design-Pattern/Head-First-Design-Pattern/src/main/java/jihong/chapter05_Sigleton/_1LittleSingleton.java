@@ -6,7 +6,7 @@ public class _1LittleSingleton {
 
     private static _1LittleSingleton uniqueInstance;
 
-    private _1LittleSingleton(){
+    private _1LittleSingleton() {
         empty = true;
         boiled = false;
     }
@@ -16,12 +16,12 @@ public class _1LittleSingleton {
      * - 멀티스레딩 문제 발생
      * @return
      */
-    public static _1LittleSingleton getInstance(){
-        if(uniqueInstance == null){
+    public static _1LittleSingleton getInstance() {
+        if (uniqueInstance == null) {
             uniqueInstance = new _1LittleSingleton();
         }
         return uniqueInstance;
     }
 
-    //기타 코드..
+    // 기타 코드..
 }

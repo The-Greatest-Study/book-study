@@ -1,7 +1,7 @@
 package swooku.chapter08_algorithm_encapsulation;
 
 public class Coffee extends CaffeineBeverage {
-    
+
     public void brew() {
         System.out.println("필터로 커피를 우려내는 중");
     }

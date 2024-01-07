@@ -1,11 +1,11 @@
 package minho.chapter03_decorator;
 
-import minho.chapter03_decorator.Beverage.*;
-
 import static minho.chapter03_decorator.Beverage.Beverage.Size.*;
 
+import minho.chapter03_decorator.Beverage.*;
+
 public class StarBuzzCoffee {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Beverage beverage1 = new Espresso(TALL);
         System.out.println(beverage1.getDescription() + " $" + beverage1.cost());
 

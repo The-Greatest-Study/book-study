@@ -1,15 +1,14 @@
 package minho.chapter08_template_method_pattern.cafe_with_hook;
 
-import org.apache.commons.lang3.StringUtils;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
+import org.apache.commons.lang3.StringUtils;
 
-public class CoffeeWithHook extends CaffeinBeverageWithHook{
-    
-    final static String NEED_CONDIMENTS = "y";
+public class CoffeeWithHook extends CaffeinBeverageWithHook {
+
+    static final String NEED_CONDIMENTS = "y";
 
     @Override
     public void addCondiments() {
@@ -24,7 +23,7 @@ public class CoffeeWithHook extends CaffeinBeverageWithHook{
     @Override
     boolean customerWantsCondinents() {
         String answer = getUserInput();
-        
+
         return answer.toLowerCase().startsWith(NEED_CONDIMENTS);
     }
 
@@ -34,14 +33,14 @@ public class CoffeeWithHook extends CaffeinBeverageWithHook{
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
         String answer = null;
-        while(true){
-            try{
+        while (true) {
+            try {
                 answer = in.readLine();
             } catch (IOException ioe) {
                 System.err.println("IO오류");
             }
 
-            if(isYn(answer)) {
+            if (isYn(answer)) {
                 break;
             } else {
                 System.out.print("(y/n)으로 입력해주세요");

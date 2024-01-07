@@ -1,9 +1,9 @@
 package jiin.chapter06_command.command;
 
 public class NoCommand implements Command {
-	@Override
-	public void execute() {}
+    @Override
+    public void execute() {}
 
-	@Override
-	public void undo() {}
+    @Override
+    public void undo() {}
 }

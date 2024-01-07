@@ -4,8 +4,7 @@ public class _4DCLSingleton {
 
     private static _4DCLSingleton uniqueInstance;
 
-    private _4DCLSingleton(){
-    }
+    private _4DCLSingleton() {}
 
     /**
      * Double-Checked Locking
@@ -13,10 +12,10 @@ public class _4DCLSingleton {
      * - 자바 1.4 버전 이하에서는 사용 불가능
      * @return
      */
-    public static synchronized _4DCLSingleton getInstance(){
-        if(uniqueInstance == null){
-            synchronized (_4DCLSingleton.class){
-                if(uniqueInstance == null){
+    public static synchronized _4DCLSingleton getInstance() {
+        if (uniqueInstance == null) {
+            synchronized (_4DCLSingleton.class) {
+                if (uniqueInstance == null) {
                     uniqueInstance = new _4DCLSingleton();
                 }
             }
@@ -24,6 +23,5 @@ public class _4DCLSingleton {
         return uniqueInstance;
     }
 
-
-    //기타 코드..
+    // 기타 코드..
 }

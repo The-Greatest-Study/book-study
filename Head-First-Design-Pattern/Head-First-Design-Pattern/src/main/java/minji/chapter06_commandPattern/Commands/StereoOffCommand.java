@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import minji.chapter06_commandPattern.Receivers.Stereo;
 
 @AllArgsConstructor
-public class StereoOffCommand implements Command{
+public class StereoOffCommand implements Command {
 
     Stereo stereo;
 

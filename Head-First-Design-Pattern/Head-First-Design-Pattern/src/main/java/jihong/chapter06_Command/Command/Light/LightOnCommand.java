@@ -5,12 +5,12 @@ import jihong.chapter06_Command.Command.Command;
 public class LightOnCommand implements Command {
     Light light;
 
-    public LightOnCommand(Light light){
+    public LightOnCommand(Light light) {
         this.light = light;
     }
 
     @Override
-    public void execute(){
+    public void execute() {
         light.on();
     }
 
@@ -18,6 +18,4 @@ public class LightOnCommand implements Command {
     public void undo() {
         light.off();
     }
-
-
 }

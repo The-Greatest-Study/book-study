@@ -13,5 +13,4 @@ public class CaffeinBeverageRunner {
         Coffee myCoffee = new Coffee();
         myCoffee.prepareRecipe();
     }
-
 }

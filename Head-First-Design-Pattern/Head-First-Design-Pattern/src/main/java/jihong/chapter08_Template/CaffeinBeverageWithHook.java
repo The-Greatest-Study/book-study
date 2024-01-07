@@ -2,7 +2,7 @@ package jihong.chapter08_Template;
 
 public abstract class CaffeinBeverageWithHook {
 
-    final void prepareRecipe(){
+    final void prepareRecipe() {
         boildWater();
         brew();
         pourInCup();
@@ -17,14 +17,15 @@ public abstract class CaffeinBeverageWithHook {
         return true;
     }
 
-    abstract  void brew();
+    abstract void brew();
+
     abstract void addCondiments();
 
-    void boildWater(){
+    void boildWater() {
         System.out.println("물 끓이는 중");
     }
 
-    public void pourInCup(){
+    public void pourInCup() {
         System.out.println("컵에 따르는 중");
     }
 }

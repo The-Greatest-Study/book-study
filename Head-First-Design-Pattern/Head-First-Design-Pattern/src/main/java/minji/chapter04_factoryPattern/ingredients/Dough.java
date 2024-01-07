@@ -1,4 +1,3 @@
 package minji.chapter04_factoryPattern.ingredients;
 
-public interface Dough {
-}
+public interface Dough {}

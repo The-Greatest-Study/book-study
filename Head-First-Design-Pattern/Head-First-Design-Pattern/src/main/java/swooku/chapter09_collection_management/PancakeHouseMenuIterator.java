@@ -2,7 +2,7 @@ package swooku.chapter09_collection_management;
 
 import java.util.ArrayList;
 
-public class PancakeHouseMenuIterator implements Iterator{
+public class PancakeHouseMenuIterator implements Iterator {
     ArrayList<MenuItem> items;
     int position = 0;
 
@@ -11,13 +11,13 @@ public class PancakeHouseMenuIterator implements Iterator{
     }
 
     public MenuItem next() {
-        MenuItem menuItem = items.get(position);  
+        MenuItem menuItem = items.get(position);
         position = position + 1;
-        return menuItem;     
+        return menuItem;
     }
 
     public boolean hasNext() {
-        if(position >= items.size() || items.get(position) == null) {
+        if (position >= items.size() || items.get(position) == null) {
             return false;
         } else {
             return true;

@@ -7,7 +7,7 @@ public class Singleton {
 
     // Lazyinstantiation
     public static Singleton getInstance() {
-        if(uniqueInstance == null) {
+        if (uniqueInstance == null) {
             uniqueInstance = new Singleton();
         }
         return uniqueInstance;

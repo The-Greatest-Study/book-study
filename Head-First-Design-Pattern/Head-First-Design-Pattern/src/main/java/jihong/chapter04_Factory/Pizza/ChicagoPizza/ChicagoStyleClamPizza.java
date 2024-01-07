@@ -4,7 +4,5 @@ import jihong.chapter04_Factory.Pizza.Pizza;
 
 public class ChicagoStyleClamPizza extends Pizza {
     @Override
-    public void prepare() {
-
-    }
+    public void prepare() {}
 }

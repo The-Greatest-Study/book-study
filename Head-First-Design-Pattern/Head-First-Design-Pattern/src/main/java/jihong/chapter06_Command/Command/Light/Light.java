@@ -4,19 +4,17 @@ public class Light {
 
     private String room;
 
-    public void on(){
+    public void on() {
         System.out.println(room + " 조명이 켜졌습니다");
     }
 
-    public void off(){
+    public void off() {
         System.out.println(room + " 조명이 꺼졌습니다");
     }
 
-    public Light(String room){
+    public Light(String room) {
         this.room = room;
     }
 
-    public Light(){
-
-    }
+    public Light() {}
 }

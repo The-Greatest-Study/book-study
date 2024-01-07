@@ -9,10 +9,16 @@ import jiin.chapter04_factory.pizza.pizzaIngredient.vegitable.Vegitable;
 
 public interface PizzaIngredientFactory {
     public String getPizzaStyle();
+
     public Dough createDough();
+
     public Sauce createSauce();
+
     public Cheese createCheese();
+
     public Vegitable[] createVeggies();
+
     public Pepperoni createPepperoni();
+
     public Clams createClam();
 }

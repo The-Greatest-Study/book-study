@@ -1,9 +1,7 @@
-package jihong.chapter09_Collection;
+package jihong.chapter09_Composite;
 
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 
-public class DinerMenuIterator implements Iterator{
+public class DinerMenuIterator implements Iterator {
     MenuItem[] items;
     int position = 0;
 
@@ -13,7 +11,7 @@ public class DinerMenuIterator implements Iterator{
 
     @Override
     public boolean hasNext() {
-        if(position >= items.length || items[position] == null){
+        if (position >= items.length || items[position] == null) {
             return false;
         }
         return true;

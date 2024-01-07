@@ -6,7 +6,7 @@ import java.util.List;
 public class MyStringList extends AbstractList<String> {
     private String[] myList;
 
-    MyStringList(String[] strings){
+    MyStringList(String[] strings) {
         myList = strings;
     }
 
@@ -20,9 +20,9 @@ public class MyStringList extends AbstractList<String> {
         return myList.length;
     }
 
-    public String set(int index, String item){
+    public String set(int index, String item) {
         String oldString = myList[index];
-        myList[index]= item;
+        myList[index] = item;
         return oldString;
     }
 
@@ -31,7 +31,7 @@ public class MyStringList extends AbstractList<String> {
         MyStringList duckList = new MyStringList(ducks);
 
         List<String> ducksSubList = duckList.subList(1, 3);
-        for(String duck : ducksSubList) {
+        for (String duck : ducksSubList) {
             System.out.println(duck);
         }
     }

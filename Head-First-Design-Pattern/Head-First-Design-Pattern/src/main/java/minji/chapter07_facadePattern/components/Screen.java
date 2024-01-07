@@ -29,13 +29,10 @@ public class Screen {
             this.screenStatus = ScreenStatus.DOWN;
         }
         System.out.println(this);
-
     }
 
     @Override
     public String toString() {
-        return "Screen{" +
-                "status=" + screenStatus +
-                '}';
+        return "Screen{" + "status=" + screenStatus + '}';
     }
 }

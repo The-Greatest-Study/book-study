@@ -2,7 +2,7 @@ package minho.chapter04_factory_pattern.Ingredients.Factory;
 
 import minho.chapter04_factory_pattern.Ingredients.*;
 
-public class NYPizzaIngredientFactory implements IngredientFactory{
+public class NYPizzaIngredientFactory implements IngredientFactory {
     @Override
     public Dough createDough() {
         return new ThinCrustDough();
@@ -20,7 +20,7 @@ public class NYPizzaIngredientFactory implements IngredientFactory{
 
     @Override
     public Veggies[] createVeggies() {
-        return new Veggies[]{new Garlic(), new Onion(), new Mushroom(), new RedPepper()};
+        return new Veggies[] {new Garlic(), new Onion(), new Mushroom(), new RedPepper()};
     }
 
     @Override

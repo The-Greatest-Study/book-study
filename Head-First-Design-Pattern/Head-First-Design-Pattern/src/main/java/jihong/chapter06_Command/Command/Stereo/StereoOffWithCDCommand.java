@@ -5,12 +5,12 @@ import jihong.chapter06_Command.Command.Command;
 public class StereoOffWithCDCommand implements Command {
     Stereo stereo;
 
-    public StereoOffWithCDCommand(Stereo stereo){
+    public StereoOffWithCDCommand(Stereo stereo) {
         this.stereo = stereo;
     }
 
     @Override
-    public void execute(){
+    public void execute() {
         stereo.off();
     }
 
@@ -20,5 +20,4 @@ public class StereoOffWithCDCommand implements Command {
         stereo.setCD();
         stereo.setVolume(11);
     }
-
 }

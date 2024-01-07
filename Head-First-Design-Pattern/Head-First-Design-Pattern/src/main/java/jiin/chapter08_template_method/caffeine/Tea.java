@@ -21,5 +21,6 @@ public class Tea {
     }
 
     private void addLemon() {
-        System.out.println("레몬을 추가하는 중중");    }
+        System.out.println("레몬을 추가하는 중중");
+    }
 }

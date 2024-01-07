@@ -17,7 +17,6 @@ public abstract class CaffeineBeverage {
         }
     }
 
-
     // 왜 여기다가 public을 안붙힐까?
     // public, private, protected 가 붙어있지 않으면 default로 package 설정이 적용됨
     // 같은 패키지 내에서만 참조를 가능하게 해서 상속을 받을수 있게 하기 위해서?

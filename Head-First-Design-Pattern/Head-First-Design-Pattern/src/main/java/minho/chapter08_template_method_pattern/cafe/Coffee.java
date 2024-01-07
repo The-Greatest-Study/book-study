@@ -11,5 +11,4 @@ public class Coffee extends CaffeinBeverage {
     public void brew() {
         System.out.println("필터로 커피를 우려내는 중");
     }
-
 }

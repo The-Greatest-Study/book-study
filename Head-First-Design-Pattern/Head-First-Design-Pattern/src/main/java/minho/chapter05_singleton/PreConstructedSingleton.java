@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 public class PreConstructedSingleton {
     private static PreConstructedSingleton preConstructedSingleton = new PreConstructedSingleton();
 
-    public static PreConstructedSingleton getInstance(){
+    public static PreConstructedSingleton getInstance() {
         return preConstructedSingleton;
     }
 

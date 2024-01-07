@@ -27,5 +27,4 @@ public class Tuner {
     public String toString() {
         return description;
     }
-
 }

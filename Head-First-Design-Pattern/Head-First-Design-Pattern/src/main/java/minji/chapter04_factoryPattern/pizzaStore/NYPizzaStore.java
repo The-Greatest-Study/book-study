@@ -4,7 +4,7 @@ import minji.chapter04_factoryPattern.ingredientFactory.NYPizzaIngredientFactory
 import minji.chapter04_factoryPattern.ingredientFactory.PizzaIngredientFactory;
 import minji.chapter04_factoryPattern.pizza.*;
 
-public class NYPizzaStore extends PizzaStore{
+public class NYPizzaStore extends PizzaStore {
 
     PizzaIngredientFactory ingredientFactory = new NYPizzaIngredientFactory();
 
@@ -12,7 +12,7 @@ public class NYPizzaStore extends PizzaStore{
     public Pizza createPizza(String type) {
         if (type.equals("cheese")) {
             return new CheesePizza(ingredientFactory);
-        } else if (type.equals("clam")){
+        } else if (type.equals("clam")) {
             return new ClamPizza(ingredientFactory);
         } else if (type.equals("veggie")) {
             return new VeggiePizza(ingredientFactory);

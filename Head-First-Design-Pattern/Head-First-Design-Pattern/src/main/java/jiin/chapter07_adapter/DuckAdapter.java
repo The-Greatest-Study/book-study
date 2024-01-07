@@ -1,8 +1,7 @@
 package jiin.chapter07_adapter;
 
-import lombok.AllArgsConstructor;
-
 import java.util.concurrent.ThreadLocalRandom;
+import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 public class DuckAdapter implements Turkey {
@@ -15,7 +14,7 @@ public class DuckAdapter implements Turkey {
 
     @Override
     public void fly() {
-        if(ThreadLocalRandom.current().nextInt(5) == 0){
+        if (ThreadLocalRandom.current().nextInt(5) == 0) {
             duck.fly();
         }
     }

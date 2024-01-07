@@ -11,7 +11,7 @@ public class CeilingFanOffCommand implements Command {
 
     @Override
     public void execute() {
-        switch (ceilingFan.getSpeed()){
+        switch (ceilingFan.getSpeed()) {
             case CeilingFan.OFF -> ceilingFan.high();
             case CeilingFan.LOW -> ceilingFan.off();
             case CeilingFan.MEDIUM -> ceilingFan.low();
@@ -22,7 +22,7 @@ public class CeilingFanOffCommand implements Command {
 
     @Override
     public void undo() {
-        switch (ceilingFan.getSpeed()){
+        switch (ceilingFan.getSpeed()) {
             case CeilingFan.OFF -> ceilingFan.low();
             case CeilingFan.LOW -> ceilingFan.medium();
             case CeilingFan.MEDIUM -> ceilingFan.high();

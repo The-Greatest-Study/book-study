@@ -11,13 +11,14 @@ public class HomeTheaterFacade {
     Screen screen;
     PopcornPopper popper;
 
-    public HomeTheaterFacade(Amplifier amp,
-                             Tuner tuner,
-                             StreamingPlayer player,
-                             Projector projector,
-                             Screen screen,
-                             TheaterLights lights,
-                             PopcornPopper popper) {
+    public HomeTheaterFacade(
+            Amplifier amp,
+            Tuner tuner,
+            StreamingPlayer player,
+            Projector projector,
+            Screen screen,
+            TheaterLights lights,
+            PopcornPopper popper) {
 
         this.amp = amp;
         this.tuner = tuner;
@@ -55,12 +56,7 @@ public class HomeTheaterFacade {
         player.off();
     }
 
-    public void listenToRadio() {
+    public void listenToRadio() {}
 
-    }
-
-    public void endRadio() {
-
-    }
-
+    public void endRadio() {}
 }

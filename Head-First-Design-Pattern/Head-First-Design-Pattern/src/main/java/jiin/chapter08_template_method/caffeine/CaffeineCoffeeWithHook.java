@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Locale;
 
-public class CaffeineCoffeeWithHook extends CaffeineBeverage{
+public class CaffeineCoffeeWithHook extends CaffeineBeverage {
     @Override
     void brew() {
         System.out.println("필터로 커피를 우려내는 중");
@@ -20,7 +20,7 @@ public class CaffeineCoffeeWithHook extends CaffeineBeverage{
     protected boolean customerWantsCondiments() {
         String answer = askCustomerWantsCondiments();
 
-        if("yes".equals(answer.toLowerCase(Locale.ROOT))){
+        if ("yes".equals(answer.toLowerCase(Locale.ROOT))) {
             return true;
         } else {
             return false;
@@ -33,7 +33,7 @@ public class CaffeineCoffeeWithHook extends CaffeineBeverage{
         System.out.println("커피에 우유와 설탕을 넣을까요? (yes/no)");
 
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        try{
+        try {
             answer = in.readLine();
         } catch (IOException ioe) {
             System.err.println("IO 오류");

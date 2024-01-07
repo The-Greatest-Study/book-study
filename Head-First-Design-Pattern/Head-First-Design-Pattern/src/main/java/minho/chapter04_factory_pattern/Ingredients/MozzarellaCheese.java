@@ -1,4 +1,3 @@
 package minho.chapter04_factory_pattern.Ingredients;
 
-public class MozzarellaCheese implements Cheese{
-}
+public class MozzarellaCheese implements Cheese {}

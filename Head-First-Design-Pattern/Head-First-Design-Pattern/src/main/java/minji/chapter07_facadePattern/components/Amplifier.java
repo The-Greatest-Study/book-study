@@ -57,12 +57,17 @@ public class Amplifier {
 
     @Override
     public String toString() {
-        return "Amplifier{" +
-                "tuner=" + tuner +
-                ", player=" + player +
-                ", status=" + status +
-                ", soundMode=" + soundMode +
-                ", volume=" + volume +
-                '}';
+        return "Amplifier{"
+                + "tuner="
+                + tuner
+                + ", player="
+                + player
+                + ", status="
+                + status
+                + ", soundMode="
+                + soundMode
+                + ", volume="
+                + volume
+                + '}';
     }
 }

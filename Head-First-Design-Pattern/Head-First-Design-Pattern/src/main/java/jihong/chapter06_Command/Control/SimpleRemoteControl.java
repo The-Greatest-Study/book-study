@@ -9,10 +9,11 @@ import lombok.NoArgsConstructor;
 public class SimpleRemoteControl {
     Command slot;
 
-    public void setCommand(Command command){
+    public void setCommand(Command command) {
         slot = command;
     }
-    public void buttonWasPressed(){
+
+    public void buttonWasPressed() {
         slot.execute();
     }
 }

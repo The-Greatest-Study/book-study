@@ -2,7 +2,7 @@ package minji.chapter07_adapterPattern;
 
 import java.util.Random;
 
-public class DuckAdapter implements Turkey{
+public class DuckAdapter implements Turkey {
     Duck duck;
     Random rand;
 

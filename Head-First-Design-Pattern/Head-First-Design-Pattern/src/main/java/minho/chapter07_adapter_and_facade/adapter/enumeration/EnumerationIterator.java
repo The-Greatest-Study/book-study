@@ -7,7 +7,7 @@ public class EnumerationIterator implements Iterator<Object> {
 
     private final Enumeration<?> enumeration;
 
-    public EnumerationIterator(Enumeration<?> enumeration){
+    public EnumerationIterator(Enumeration<?> enumeration) {
         this.enumeration = enumeration;
     }
 

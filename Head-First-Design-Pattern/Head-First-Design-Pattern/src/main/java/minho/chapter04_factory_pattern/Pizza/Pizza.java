@@ -30,11 +30,11 @@ public abstract class Pizza {
         this.name = name;
     }
 
-    public String getName(){
+    public String getName() {
         return this.name;
     }
 
-    public String toString(){
+    public String toString() {
         return "피자 : " + this.name;
     }
 }

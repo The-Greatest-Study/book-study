@@ -44,9 +44,6 @@ public class Projector {
 
     @Override
     public String toString() {
-        return "Projector{" +
-                "status=" + status +
-                ", mode=" + mode +
-                '}';
+        return "Projector{" + "status=" + status + ", mode=" + mode + '}';
     }
 }

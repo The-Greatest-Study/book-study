@@ -2,7 +2,7 @@ package minji.chapter03_decoratorPattern.Decorator;
 
 import minji.chapter03_decoratorPattern.Beverage;
 
-public class Whip extends CondimentDecorator{
+public class Whip extends CondimentDecorator {
     public Whip(Beverage beverage) {
         this.beverage = beverage;
     }
@@ -19,7 +19,6 @@ public class Whip extends CondimentDecorator{
         }
         return cost;
     }
-
 
     @Override
     public String getDescription() {

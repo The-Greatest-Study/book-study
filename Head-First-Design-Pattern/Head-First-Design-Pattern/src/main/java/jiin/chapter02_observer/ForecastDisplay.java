@@ -30,5 +30,4 @@ public class ForecastDisplay implements Observer, DisplayElement {
         }
         System.out.println();
     }
-
 }

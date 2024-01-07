@@ -1,15 +1,15 @@
 package jiin.chapter03_decorator;
 
+import static jiin.chapter03_decorator.beverage.Beverage.Size.GRANDE;
+import static jiin.chapter03_decorator.beverage.Beverage.Size.TALL;
+import static jiin.chapter03_decorator.beverage.Beverage.Size.VENTI;
+
 import jiin.chapter03_decorator.beverage.Beverage;
 import jiin.chapter03_decorator.beverage.DarkRoast;
 import jiin.chapter03_decorator.beverage.Espresso;
 import jiin.chapter03_decorator.beverage.decorator.Mocha;
 import jiin.chapter03_decorator.beverage.decorator.Soy;
 import jiin.chapter03_decorator.beverage.decorator.Whip;
-
-import static jiin.chapter03_decorator.beverage.Beverage.Size.GRANDE;
-import static jiin.chapter03_decorator.beverage.Beverage.Size.TALL;
-import static jiin.chapter03_decorator.beverage.Beverage.Size.VENTI;
 
 public class StarbuzzCoffee {
     public static void main(String[] args) {
