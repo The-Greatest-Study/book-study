@@ -4,9 +4,10 @@ import lombok.Getter;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Iterator;
 
 @Getter
-public class PancakeHouseMenu {
+public class PancakeHouseMenu implements Menu {
 
     List<MenuItem> menuItems = new ArrayList<>();
 
@@ -46,7 +47,8 @@ public class PancakeHouseMenu {
     }
 
     public Iterator createIterator(){
-        return new PancakeHouseMenuIterator(menuItems);
+//        return new PancakeHouseMenuIterator(menuItems);
+        return menuItems.iterator();
     }
 
 }

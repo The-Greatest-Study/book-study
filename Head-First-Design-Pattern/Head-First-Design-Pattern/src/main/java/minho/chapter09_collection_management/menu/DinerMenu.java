@@ -1,6 +1,8 @@
 package minho.chapter09_collection_management.menu;
 
-public class DinerMenu {
+import java.util.Iterator;
+
+public class DinerMenu implements Menu {
 
     private static final int MAX_ITEMS = 6;
     private int numberOfItems = 0;

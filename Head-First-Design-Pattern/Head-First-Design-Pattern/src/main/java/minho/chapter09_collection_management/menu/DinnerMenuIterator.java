@@ -1,6 +1,8 @@
 package minho.chapter09_collection_management.menu;
 
-public class DinnerMenuIterator implements Iterator{
+import java.util.Iterator;
+
+public class DinnerMenuIterator implements Iterator {
 
     private final MenuItem[] items;
     private int position = 0;
@@ -24,4 +26,8 @@ public class DinnerMenuIterator implements Iterator{
         return items[position++];
     }
 
+    @Override
+    public void remove() {
+        throw new UnsupportedOperationException("메뉴 항목은 지우면 안 됩니다.");
+    }
 }
