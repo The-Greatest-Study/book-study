@@ -49,7 +49,7 @@ public class GumballMachine {
             count -= 1;
         }
     }
-    
+
     void refillBalls(int refillCount) {
         if (state == getSoldOutState()) {
             count += refillCount;
@@ -87,9 +87,6 @@ public class GumballMachine {
 
     @Override
     public String toString() {
-        return "GumballMachine{" +
-                "state=" + state +
-                ", count=" + count +
-                '}';
+        return "GumballMachine{" + "state=" + state + ", count=" + count + '}';
     }
 }

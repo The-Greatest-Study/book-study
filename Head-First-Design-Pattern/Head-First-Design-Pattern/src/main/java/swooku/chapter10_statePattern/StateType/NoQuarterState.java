@@ -3,7 +3,7 @@ package swooku.chapter10_statePattern.StateType;
 import swooku.chapter10_statePattern.GumballMachine;
 import swooku.chapter10_statePattern.State;
 
-public class NoQuarterState implements State{
+public class NoQuarterState implements State {
     GumballMachine gumballMachine;
 
     public NoQuarterState(GumballMachine gumballMachine) {
@@ -30,5 +30,4 @@ public class NoQuarterState implements State{
     public void dispense() {
         System.out.println("동전을 넣어주세요.");
     }
-    
 }

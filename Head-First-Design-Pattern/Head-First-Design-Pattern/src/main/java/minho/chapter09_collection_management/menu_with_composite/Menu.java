@@ -18,7 +18,7 @@ public class Menu extends MenuComponent {
         return new Menu(name, description);
     }
 
-    public void add(MenuComponent menuComponent){
+    public void add(MenuComponent menuComponent) {
         menuComponents.add(menuComponent);
     }
 
@@ -52,5 +52,4 @@ public class Menu extends MenuComponent {
             menuComponent.print();
         }
     }
-
 }

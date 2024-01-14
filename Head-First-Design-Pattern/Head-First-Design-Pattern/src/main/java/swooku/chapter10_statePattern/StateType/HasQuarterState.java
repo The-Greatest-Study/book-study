@@ -1,11 +1,10 @@
 package swooku.chapter10_statePattern.StateType;
 
 import java.util.Random;
-
 import swooku.chapter10_statePattern.GumballMachine;
 import swooku.chapter10_statePattern.State;
 
-public class HasQuarterState implements State{
+public class HasQuarterState implements State {
     Random randomWinner = new Random(System.currentTimeMillis());
     GumballMachine gumballMachine;
 
@@ -28,7 +27,7 @@ public class HasQuarterState implements State{
     public void turnCrank() {
         System.out.println("손잡이를 돌리셨습니다.");
         int winner = randomWinner.nextInt(10);
-        if((winner == 0) && (gumballMachine.getCount() > 1)) {
+        if ((winner == 0) && (gumballMachine.getCount() > 1)) {
             gumballMachine.setState(gumballMachine.getWinnerState());
         } else {
             gumballMachine.setState(gumballMachine.getSoldState());
@@ -39,5 +38,4 @@ public class HasQuarterState implements State{
     public void dispense() {
         System.out.println("알맹이를 내보낼 수 없습니다.");
     }
-    
 }

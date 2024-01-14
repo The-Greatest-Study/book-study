@@ -1,12 +1,11 @@
 package minji.chapter10_statePattern;
 
-public class NoQuarterState implements State{
+public class NoQuarterState implements State {
     GumballMachine gumballMachine;
 
     public NoQuarterState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;
     }
-
 
     @Override
     public void insertQuarter() {

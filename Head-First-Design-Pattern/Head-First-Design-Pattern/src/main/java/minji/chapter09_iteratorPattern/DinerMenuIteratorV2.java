@@ -2,7 +2,7 @@ package minji.chapter09_iteratorPattern;
 
 import java.util.Iterator;
 
-public class DinerMenuIteratorV2 implements Iterator<MenuItem>{
+public class DinerMenuIteratorV2 implements Iterator<MenuItem> {
     MenuItem[] items;
     int position = 0;
 

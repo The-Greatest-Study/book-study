@@ -1,6 +1,6 @@
 package jihong.chapter09_Composite;
 
-public class DinerMenu{
+public class DinerMenu {
 
     static final int MAX_ITEMS = 6;
     int numberOfItems = 0;

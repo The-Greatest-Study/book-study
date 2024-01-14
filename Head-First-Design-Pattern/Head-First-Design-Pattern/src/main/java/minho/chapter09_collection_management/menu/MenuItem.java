@@ -24,5 +24,4 @@ public class MenuItem {
         System.out.print(price + " -- ");
         System.out.println(description);
     }
-
 }

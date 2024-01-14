@@ -11,7 +11,5 @@ public class MenuTestDrive {
 
         Waitress waitress = Waitress.from(Arrays.asList(pancakeHouseMenu, dinerMenu, cafeMenu));
         waitress.printMenu();
-
     }
-
 }
