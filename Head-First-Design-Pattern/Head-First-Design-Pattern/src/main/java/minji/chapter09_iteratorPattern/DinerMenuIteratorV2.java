@@ -1,10 +1,12 @@
-package minji.chatper09_iteratorPattern;
+package minji.chapter09_iteratorPattern;
 
-public class DinerMenuIterator implements Iterator{
+import java.util.Iterator;
+
+public class DinerMenuIteratorV2 implements Iterator<MenuItem>{
     MenuItem[] items;
     int position = 0;
 
-    public DinerMenuIterator(MenuItem[] items) {
+    public DinerMenuIteratorV2(MenuItem[] items) {
         this.items = items;
     }
 
@@ -22,5 +24,9 @@ public class DinerMenuIterator implements Iterator{
         MenuItem menuItem = items[position];
         position += 1;
         return menuItem;
+    }
+
+    public void remove() {
+        throw new UnsupportedOperationException("메뉴 항목은 지우면 안 됩니다");
     }
 }

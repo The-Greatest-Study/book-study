@@ -1,4 +1,4 @@
-package minji.chatper09_iteratorPattern;
+package minji.chapter09_iteratorPattern;
 
 public interface Iterator {
     boolean hasNext();
