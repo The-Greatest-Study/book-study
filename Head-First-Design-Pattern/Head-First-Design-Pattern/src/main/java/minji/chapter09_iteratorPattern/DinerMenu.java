@@ -2,7 +2,7 @@ package minji.chapter09_iteratorPattern;
 
 import java.util.Iterator;
 
-public class DinerMenu implements Menu{
+public class DinerMenu implements Menu {
     static final int MAX_ITEMS = 6;
     int numberOfItems = 0;
     MenuItem[] menuItems;
@@ -31,7 +31,7 @@ public class DinerMenu implements Menu{
         return new DinerMenuIteratorV2(menuItems);
     }
 
-//    public Iterator<MenuItem> createIterator() {
-//        return new DinerMenuIterator(menuItems);
-//    }
+    //    public Iterator<MenuItem> createIterator() {
+    //        return new DinerMenuIterator(menuItems);
+    //    }
 }

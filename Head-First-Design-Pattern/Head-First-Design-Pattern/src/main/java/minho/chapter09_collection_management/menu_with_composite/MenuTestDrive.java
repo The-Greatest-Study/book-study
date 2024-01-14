@@ -1,6 +1,5 @@
 package minho.chapter09_collection_management.menu_with_composite;
 
-
 public class MenuTestDrive {
 
     public static void main(String[] args) {
@@ -15,26 +14,26 @@ public class MenuTestDrive {
         allMenus.add(dinerMenu);
         allMenus.add(cafeMenu);
 
-        dinerMenu.add(MenuItem.builder()
-                .name("파스타")
-                .description("마리나라 소스 스파게티, 효모빵도 드립니다.")
-                .vegetarian(true)
-                .price(3.89)
-                .build());
+        dinerMenu.add(
+                MenuItem.builder()
+                        .name("파스타")
+                        .description("마리나라 소스 스파게티, 효모빵도 드립니다.")
+                        .vegetarian(true)
+                        .price(3.89)
+                        .build());
 
         dinerMenu.add(dessertMenu);
 
-        dessertMenu.add(MenuItem.builder()
-                .name("애플 파이")
-                .description("바삭바삭한 크러스트에 바닐라 아이스크림이 얹혀 있는 애플 파이")
-                .vegetarian(true)
-                .price(1.59)
-                .build());
+        dessertMenu.add(
+                MenuItem.builder()
+                        .name("애플 파이")
+                        .description("바삭바삭한 크러스트에 바닐라 아이스크림이 얹혀 있는 애플 파이")
+                        .vegetarian(true)
+                        .price(1.59)
+                        .build());
 
         Waitress waitress = Waitress.from(allMenus);
 
         waitress.printMenu();
-
     }
-
 }

@@ -1,12 +1,11 @@
 package jihong.chapter10_Status;
 
-public class SoldState implements State{
+public class SoldState implements State {
     GumballMachine gumballMachine;
 
-    public SoldState(GumballMachine gumballMachine){
+    public SoldState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;
     }
-
 
     @Override
     public void insertQuarter() {
@@ -26,12 +25,11 @@ public class SoldState implements State{
     @Override
     public void dispense() {
         gumballMachine.releaseBall();
-        if(gumballMachine.getCount() > 0){
+        if (gumballMachine.getCount() > 0) {
             gumballMachine.setState(gumballMachine.getNoQuarterState());
-        }else {
+        } else {
             System.out.println("Oops, out of gumballs!");
             gumballMachine.setState(gumballMachine.getSoldOutState());
         }
     }
-
 }

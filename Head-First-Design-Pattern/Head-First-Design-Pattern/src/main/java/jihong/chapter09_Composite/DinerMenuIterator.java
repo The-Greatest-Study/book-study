@@ -1,6 +1,5 @@
 package jihong.chapter09_Composite;
 
-
 public class DinerMenuIterator implements Iterator {
     MenuItem[] items;
     int position = 0;

@@ -1,6 +1,6 @@
 package minji.chapter09_iteratorPattern;
 
-public class DinerMenuIterator implements Iterator{
+public class DinerMenuIterator implements Iterator {
     MenuItem[] items;
     int position = 0;
 

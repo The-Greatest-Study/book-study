@@ -3,7 +3,7 @@ package jihong.chapter09_Composite;
 import lombok.Getter;
 
 @Getter
-public class MenuItem extends MenuComponent{
+public class MenuItem extends MenuComponent {
 
     private String name;
     private String description;
@@ -16,10 +16,10 @@ public class MenuItem extends MenuComponent{
         this.vegetarian = vegetarian;
         this.price = price;
     }
-    
-    public void print(){
+
+    public void print() {
         System.out.print(" " + getName());
-        if(isVegetarian()){
+        if (isVegetarian()) {
             System.out.print("(v)");
         }
         System.out.println(", " + getPrice());

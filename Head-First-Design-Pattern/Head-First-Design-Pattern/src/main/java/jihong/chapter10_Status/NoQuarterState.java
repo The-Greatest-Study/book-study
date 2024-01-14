@@ -1,12 +1,11 @@
 package jihong.chapter10_Status;
 
-public class NoQuarterState implements State{
+public class NoQuarterState implements State {
     GumballMachine gumballMachine;
 
-    public NoQuarterState(GumballMachine gumballMachine){
+    public NoQuarterState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;
     }
-
 
     @Override
     public void insertQuarter() {
@@ -28,5 +27,4 @@ public class NoQuarterState implements State{
     public void dispense() {
         System.out.println("동전을 넣어 주세요.");
     }
-
 }

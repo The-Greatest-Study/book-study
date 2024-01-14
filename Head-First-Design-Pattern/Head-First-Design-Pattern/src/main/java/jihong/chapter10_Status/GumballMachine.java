@@ -1,4 +1,5 @@
 package jihong.chapter10_Status;
+
 import lombok.Data;
 import lombok.ToString;
 
@@ -10,7 +11,7 @@ public class GumballMachine {
     State hasQuarterState;
     State soldState;
     State winnerState;
-    
+
     State state = soldOutState;
     int count = 0;
 
@@ -45,7 +46,7 @@ public class GumballMachine {
     void releaseBall() {
         System.out.println("알맹이를 내보내고 있습니다.");
         if (count > 0) {
-            count --;
+            count--;
         }
     }
 

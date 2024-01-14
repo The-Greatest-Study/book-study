@@ -1,7 +1,5 @@
 package jihong.chapter09_Composite;
 
-import lombok.Getter;
-
 public abstract class MenuComponent {
 
     public void add(MenuComponent menuComponent) {
@@ -12,31 +10,27 @@ public abstract class MenuComponent {
         throw new UnsupportedOperationException();
     }
 
-    public MenuComponent getChild(int i){
+    public MenuComponent getChild(int i) {
         throw new UnsupportedOperationException();
     }
 
-    public  String getName(){
+    public String getName() {
         throw new UnsupportedOperationException();
     }
 
-    public  String getDescription(){
+    public String getDescription() {
         throw new UnsupportedOperationException();
     }
 
-    public double getPrice(){
+    public double getPrice() {
         throw new UnsupportedOperationException();
     }
 
-
-    public  boolean isVegetarian(){
+    public boolean isVegetarian() {
         throw new UnsupportedOperationException();
     }
 
-
-    public void  print(){
+    public void print() {
         throw new UnsupportedOperationException();
     }
-
-
 }
