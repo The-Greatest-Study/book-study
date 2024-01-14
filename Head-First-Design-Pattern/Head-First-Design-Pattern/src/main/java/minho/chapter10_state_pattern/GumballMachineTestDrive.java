@@ -26,7 +26,6 @@ public class GumballMachineTestDrive {
 
         System.out.println(gumballMachine);
 
-
         gumballMachine.refill(3);
         gumballMachine.insertQuarter();
         gumballMachine.insertQuarter();
@@ -38,5 +37,4 @@ public class GumballMachineTestDrive {
 
         System.out.println(gumballMachine);
     }
-
 }

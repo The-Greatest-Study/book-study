@@ -1,8 +1,8 @@
 package minho.chapter10_state_pattern.constant;
 
-public final class MachineConstant {    // final로 상속을 막음
+public final class MachineConstant { // final로 상속을 막음
 
-    private MachineConstant() {}    // private으로 객체 생성을 막음
+    private MachineConstant() {} // private으로 객체 생성을 막음
 
     /*
      * import static 구문을 활용하여 상수에 접근하여 Anti-pattern인 Constant Interface와 동일한 기능과 편리성을 제공받는다.
@@ -21,9 +21,8 @@ public final class MachineConstant {    // final로 상속을 막음
      *
      * 참고 : https://www.baeldung.com/java-constants-good-practices
      */
-    public final static int SOLD_OUT = 0;
-    public final static int NO_QUARTER = 1;
-    public final static int HAS_QUARTER = 2;
-    public final static int SOLD = 3;
-
+    public static final int SOLD_OUT = 0;
+    public static final int NO_QUARTER = 1;
+    public static final int HAS_QUARTER = 2;
+    public static final int SOLD = 3;
 }

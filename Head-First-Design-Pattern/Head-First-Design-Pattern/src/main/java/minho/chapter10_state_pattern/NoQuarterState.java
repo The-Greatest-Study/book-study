@@ -34,7 +34,5 @@ public class NoQuarterState implements State {
     }
 
     @Override
-    public void refill() {
-
-    }
+    public void refill() {}
 }

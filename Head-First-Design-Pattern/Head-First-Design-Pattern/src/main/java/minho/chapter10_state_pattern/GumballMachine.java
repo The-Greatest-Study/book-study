@@ -1,8 +1,8 @@
 package minho.chapter10_state_pattern;
 
-import lombok.Getter;
-
 import static minho.chapter10_state_pattern.constant.MachineConstant.*;
+
+import lombok.Getter;
 
 public class GumballMachine {
 
@@ -23,7 +23,7 @@ public class GumballMachine {
         winnerState = WinnerState.from(this);
 
         this.count = numberOfGumballs;
-        if(numberOfGumballs > 0) {
+        if (numberOfGumballs > 0) {
             state = noQuarterState;
         } else {
             state = soldOutState;
@@ -35,71 +35,71 @@ public class GumballMachine {
     }
 
     public void insertQuarter() {
-//        if (state == HAS_QUARTER) {
-//            System.out.println("동전은 한 개만 넣어 주세요.");
-//        } else if(state == NO_QUARTER) {
-//            System.out.println("동전을 넣으셨습니다.");
-//            state = HAS_QUARTER;
-//        } else if(state == SOLD_OUT) {
-//            System.out.println("매진되었습니다. 다음 기회에 이용해 주세요.");
-//        } else if(state == SOLD) {
-//            System.out.println("알맹이를 내보내고 있습니다.");
-//        }
+        //        if (state == HAS_QUARTER) {
+        //            System.out.println("동전은 한 개만 넣어 주세요.");
+        //        } else if(state == NO_QUARTER) {
+        //            System.out.println("동전을 넣으셨습니다.");
+        //            state = HAS_QUARTER;
+        //        } else if(state == SOLD_OUT) {
+        //            System.out.println("매진되었습니다. 다음 기회에 이용해 주세요.");
+        //        } else if(state == SOLD) {
+        //            System.out.println("알맹이를 내보내고 있습니다.");
+        //        }
         state.insertQuarter();
     }
 
     public void ejectQuarter() {
-//        if (state == HAS_QUARTER) {
-//            System.out.println("동전이 반환됩니다.");
-//            state = NO_QUARTER;
-//        } else if(state == NO_QUARTER) {
-//            System.out.println("동전을 넣어주세요.");
-//        } else if(state == SOLD_OUT) {
-//            System.out.println("이미 알맹이를 뽑으셨습니다.");
-//        } else if(state == SOLD) {
-//            System.out.println("동전을 넣지 않으셨습니다. 동전이 반환되지 않습니다.");
-//        }
+        //        if (state == HAS_QUARTER) {
+        //            System.out.println("동전이 반환됩니다.");
+        //            state = NO_QUARTER;
+        //        } else if(state == NO_QUARTER) {
+        //            System.out.println("동전을 넣어주세요.");
+        //        } else if(state == SOLD_OUT) {
+        //            System.out.println("이미 알맹이를 뽑으셨습니다.");
+        //        } else if(state == SOLD) {
+        //            System.out.println("동전을 넣지 않으셨습니다. 동전이 반환되지 않습니다.");
+        //        }
         state.ejectQuarter();
     }
 
     public void turnCrank() {
-//        if (state == HAS_QUARTER) {
-//            System.out.println("손잡이를 돌리셨습니다.");
-//            state = SOLD;
-//            dispense();
-//        } else if(state == NO_QUARTER) {
-//            System.out.println("동전을 넣어주세요.");
-//        } else if(state == SOLD_OUT) {
-//            System.out.println("매진되었습니다.");
-//        } else if(state == SOLD) {
-//            System.out.println("손잡이는 한 번만 돌려 주세요.");
-//        }
+        //        if (state == HAS_QUARTER) {
+        //            System.out.println("손잡이를 돌리셨습니다.");
+        //            state = SOLD;
+        //            dispense();
+        //        } else if(state == NO_QUARTER) {
+        //            System.out.println("동전을 넣어주세요.");
+        //        } else if(state == SOLD_OUT) {
+        //            System.out.println("매진되었습니다.");
+        //        } else if(state == SOLD) {
+        //            System.out.println("손잡이는 한 번만 돌려 주세요.");
+        //        }
         state.turnCrank();
         state.dispense();
     }
 
-//    public void dispense() {
-//        if (state == HAS_QUARTER) {
-//            System.out.println("알맹이를 내보낼 수 없습니다.");
-//        } else if(state == NO_QUARTER) {
-//            System.out.println("동전을 넣어주세요.");
-//        } else if(state == SOLD_OUT) {
-//            System.out.println("매진되었습니다.");
-//        } else if(state == SOLD) {
-//            System.out.println("알맹이를 내보내고 있습니다.");
-//            count -= 1;
-//            if(count == 0) {
-//                System.out.println("더 이상 알맹이가 없습니다.");
-//                state = SOLD_OUT;
-//            } else {
-//                state = NO_QUARTER;
-//            }
-//        }
-//    }
+    //    public void dispense() {
+    //        if (state == HAS_QUARTER) {
+    //            System.out.println("알맹이를 내보낼 수 없습니다.");
+    //        } else if(state == NO_QUARTER) {
+    //            System.out.println("동전을 넣어주세요.");
+    //        } else if(state == SOLD_OUT) {
+    //            System.out.println("매진되었습니다.");
+    //        } else if(state == SOLD) {
+    //            System.out.println("알맹이를 내보내고 있습니다.");
+    //            count -= 1;
+    //            if(count == 0) {
+    //                System.out.println("더 이상 알맹이가 없습니다.");
+    //                state = SOLD_OUT;
+    //            } else {
+    //                state = NO_QUARTER;
+    //            }
+    //        }
+    //    }
 
     public void releaseBall() {
         System.out.println("알맹이를 내보내고 있습니다.");
-        if(count > 0) {
+        if (count > 0) {
             count = count - 1;
         }
     }

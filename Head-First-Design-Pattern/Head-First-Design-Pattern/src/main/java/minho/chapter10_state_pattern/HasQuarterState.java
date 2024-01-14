@@ -32,7 +32,7 @@ public class HasQuarterState implements State {
         int winner = randomWinner.nextInt(10);
         if ((winner == 0) && gumballMachine.hasWinningStock()) {
             gumballMachine.updateState(gumballMachine.getWinnerState());
-        } else{
+        } else {
             gumballMachine.updateState(gumballMachine.getSoldState());
         }
     }
@@ -43,8 +43,5 @@ public class HasQuarterState implements State {
     }
 
     @Override
-    public void refill() {
-
-    }
-
+    public void refill() {}
 }

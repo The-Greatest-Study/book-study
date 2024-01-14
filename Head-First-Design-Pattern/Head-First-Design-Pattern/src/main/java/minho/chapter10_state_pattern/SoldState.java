@@ -1,10 +1,10 @@
 package minho.chapter10_state_pattern;
 
-public class SoldState implements State{
+public class SoldState implements State {
 
     GumballMachine gumballMachine;
 
-    private SoldState(GumballMachine gumballMachine){
+    private SoldState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;
     }
 
@@ -30,7 +30,7 @@ public class SoldState implements State{
     @Override
     public void dispense() {
         gumballMachine.releaseBall();
-        if (gumballMachine.hasStock()){
+        if (gumballMachine.hasStock()) {
             gumballMachine.updateState(gumballMachine.getNoQuarterState());
         } else {
             System.out.println("매진 되었습니다..");
@@ -39,8 +39,5 @@ public class SoldState implements State{
     }
 
     @Override
-    public void refill() {
-
-    }
-
+    public void refill() {}
 }

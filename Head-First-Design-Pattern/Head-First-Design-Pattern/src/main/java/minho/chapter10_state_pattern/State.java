@@ -11,5 +11,4 @@ public interface State {
     void dispense();
 
     void refill();
-
 }

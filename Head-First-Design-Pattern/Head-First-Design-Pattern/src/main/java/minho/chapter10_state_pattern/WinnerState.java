@@ -1,10 +1,10 @@
 package minho.chapter10_state_pattern;
 
-public class WinnerState implements State{
+public class WinnerState implements State {
 
     GumballMachine gumballMachine;
 
-    private WinnerState(GumballMachine gumballMachine){
+    private WinnerState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;
     }
 
@@ -30,12 +30,12 @@ public class WinnerState implements State{
     @Override
     public void dispense() {
         gumballMachine.releaseBall();
-        if(gumballMachine.outOfStock()) {
+        if (gumballMachine.outOfStock()) {
             gumballMachine.updateState(gumballMachine.getSoldOutState());
         } else {
             gumballMachine.releaseBall();
             System.out.println("축하드립니다. 알맹이를 하나 더 받으실 수 있습니다.");
-            if(gumballMachine.hasStock()) {
+            if (gumballMachine.hasStock()) {
                 gumballMachine.updateState(gumballMachine.getNoQuarterState());
             } else {
                 System.out.println("더 이상 알맹이가 없습니다.");
@@ -45,8 +45,5 @@ public class WinnerState implements State{
     }
 
     @Override
-    public void refill() {
-
-    }
-
+    public void refill() {}
 }

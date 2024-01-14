@@ -9,6 +9,6 @@ public interface State {
 
     public void dispense();
 
-    default void refill(int count){};
-
+    default void refill(int count) {}
+    ;
 }
