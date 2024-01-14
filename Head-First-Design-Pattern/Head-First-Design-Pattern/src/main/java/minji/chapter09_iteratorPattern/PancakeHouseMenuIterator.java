@@ -2,7 +2,7 @@ package minji.chapter09_iteratorPattern;
 
 import java.util.List;
 
-public class PancakeHouseMenuIterator implements Iterator{
+public class PancakeHouseMenuIterator implements Iterator {
     List<MenuItem> items;
     int position = 0;
 

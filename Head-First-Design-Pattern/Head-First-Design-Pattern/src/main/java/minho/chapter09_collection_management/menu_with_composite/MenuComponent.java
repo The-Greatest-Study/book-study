@@ -33,5 +33,4 @@ public abstract class MenuComponent {
     public void print() {
         throw new UnsupportedOperationException();
     }
-
 }

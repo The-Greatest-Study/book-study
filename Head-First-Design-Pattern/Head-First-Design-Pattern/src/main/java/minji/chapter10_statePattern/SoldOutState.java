@@ -1,6 +1,6 @@
 package minji.chapter10_statePattern;
 
-public class SoldOutState implements State{
+public class SoldOutState implements State {
     GumballMachine gumballMachine;
 
     public SoldOutState(GumballMachine gumballMachine) {

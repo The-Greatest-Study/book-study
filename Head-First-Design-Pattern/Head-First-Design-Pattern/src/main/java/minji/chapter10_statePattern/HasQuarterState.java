@@ -30,7 +30,6 @@ public class HasQuarterState implements State {
         } else {
             gumballMachine.setState(gumballMachine.getSoldState());
         }
-
     }
 
     @Override

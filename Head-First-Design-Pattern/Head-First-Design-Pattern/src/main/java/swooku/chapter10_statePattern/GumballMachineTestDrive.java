@@ -14,7 +14,7 @@ public class GumballMachineTestDrive {
         gumballMachine.insertQuarter();
         gumballMachine.turnCrank();
 
-        System.out.println(gumballMachine); 
+        System.out.println(gumballMachine);
 
         gumballMachine.insertQuarter();
         gumballMachine.turnCrank();
@@ -24,6 +24,6 @@ public class GumballMachineTestDrive {
         gumballMachine.insertQuarter();
         gumballMachine.turnCrank();
 
-        System.out.println(gumballMachine);       
+        System.out.println(gumballMachine);
     }
 }

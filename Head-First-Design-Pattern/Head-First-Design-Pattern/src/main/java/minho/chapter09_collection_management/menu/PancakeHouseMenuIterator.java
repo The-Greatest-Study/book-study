@@ -2,7 +2,7 @@ package minho.chapter09_collection_management.menu;
 
 import java.util.List;
 
-public class PancakeHouseMenuIterator implements Iterator{
+public class PancakeHouseMenuIterator implements Iterator {
 
     private final List<MenuItem> items;
     private int position = 0;
@@ -20,5 +20,4 @@ public class PancakeHouseMenuIterator implements Iterator{
     public MenuItem next() {
         return items.get(position++);
     }
-
 }

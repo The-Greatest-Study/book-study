@@ -12,7 +12,7 @@ public class Waitress {
 
     public void printMenu() {
         Iterator<Menu> menuIterator = menus.iterator();
-        while(menuIterator.hasNext()) {
+        while (menuIterator.hasNext()) {
             Menu menu = menuIterator.next();
             printMenu(menu.createIterator());
         }

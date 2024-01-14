@@ -2,7 +2,7 @@ package jihong.chapter09_Composite;
 
 import java.util.ArrayList;
 
-public class PancakeHouseMenu{
+public class PancakeHouseMenu {
     ArrayList<MenuItem> menuItems;
 
     public PancakeHouseMenu() {
