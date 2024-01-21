@@ -1,7 +1,7 @@
 plugins {
 	id 'java'
 	id 'com.diffplug.spotless' version '6.23.3'
-    id 'org.jetbrains.kotlin.jvm'
+
 }
 
 group 'tgs.jiin'
@@ -17,7 +17,6 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok:1.18.20'
 	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
 	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 }
 
 test {
@@ -42,7 +41,4 @@ spotless {
 			formatAnnotations()
 		}
 	}
-}
-kotlin {
-    jvmToolchain(17)
 }
