@@ -1,4 +1,4 @@
-package headfirst.designpatterns.proxy.gumball;
+package proxy.gumball;
 
 import java.util.Random;
 

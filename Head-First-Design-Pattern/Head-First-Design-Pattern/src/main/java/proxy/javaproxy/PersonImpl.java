@@ -1,4 +1,4 @@
-package headfirst.designpatterns.proxy.javaproxy;
+package proxy.javaproxy;
 
 public class PersonImpl implements Person {
 	String name;

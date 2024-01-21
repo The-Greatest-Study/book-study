@@ -1,4 +1,4 @@
-package headfirst.designpatterns.proxy.gumball;
+package proxy.gumball;
 
 public class WinnerState implements State {
 	private static final long serialVersionUID = 2L;

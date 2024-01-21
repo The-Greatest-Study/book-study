@@ -1,4 +1,4 @@
-package headfirst.designpatterns.proxy.javaproxy;
+package proxy.javaproxy;
 
 public interface Person {
  

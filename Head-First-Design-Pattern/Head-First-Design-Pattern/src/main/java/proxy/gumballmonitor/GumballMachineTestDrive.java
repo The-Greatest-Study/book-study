@@ -1,4 +1,4 @@
-package headfirst.designpatterns.proxy.gumballmonitor;
+package proxy.gumballmonitor;
 
 public class GumballMachineTestDrive {
 
