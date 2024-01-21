@@ -2,6 +2,7 @@ package jihong.chapter10_Status;
 
 import jihong.chapter11_Proxy.GumballMachineRemote;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
@@ -17,6 +18,7 @@ public class GumballMachine extends UnicastRemoteObject implements GumballMachin
     State winnerState;
     String location;
 
+    @Setter
     State state = soldOutState;
     int count = 0;
 
