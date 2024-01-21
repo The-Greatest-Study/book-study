@@ -1,21 +1,29 @@
 package jihong.chapter10_Status;
 
-import lombok.Data;
-import lombok.ToString;
+import jihong.chapter11_Proxy.GumballMachineRemote;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
-@ToString()
-public class GumballMachine {
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+
+@Getter
+public class GumballMachine extends UnicastRemoteObject implements GumballMachineRemote {
+    
+    private static final long serialVersionUID = 2L;
     State soldOutState;
     State noQuarterState;
     State hasQuarterState;
     State soldState;
     State winnerState;
+    String location;
 
+    @Setter
     State state = soldOutState;
     int count = 0;
 
-    public GumballMachine(int count) {
+    
+    public GumballMachine(String location, int count) throws RemoteException {
         soldOutState = new SoldOutState(this);
         noQuarterState = new NoQuarterState(this);
         hasQuarterState = new HasQuarterState(this);
@@ -28,6 +36,8 @@ public class GumballMachine {
         } else {
             state = soldOutState;
         }
+        
+        this.location = location;
     }
 
     public void insertQuarter() {
@@ -50,7 +60,7 @@ public class GumballMachine {
         }
     }
 
-    void refill(int count) {
+    public void refill(int count) {
         this.count += count;
         System.out.println("알맹이가 채워졌습니다. 남은 알맹이 수 : " + this.count);
         state.refill();
