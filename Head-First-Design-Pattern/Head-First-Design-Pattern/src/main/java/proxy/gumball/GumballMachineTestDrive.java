@@ -8,16 +8,16 @@ public class GumballMachineTestDrive {
         GumballMachineRemote gumballMachine = null;
         int count;
 
-        if (args.length < 2) {
-            System.out.println("GumballMachine <name> <inventory>");
-            System.exit(1);
-        }
+//        if (args.length < 2) {
+//            System.out.println("GumballMachine <name> <inventory>");
+//            System.exit(1);
+//        }
 
         try {
-            count = Integer.parseInt(args[1]);
+            count = Integer.parseInt("100");
 
-            gumballMachine = new GumballMachine(args[0], count);
-            Naming.rebind("//" + args[0] + "/gumballmachine", gumballMachine);
+            gumballMachine = new GumballMachine("test", count);
+            Naming.rebind("//" + "test" + "/gumballmachine", gumballMachine);
         } catch (Exception e) {
             e.printStackTrace();
         }
