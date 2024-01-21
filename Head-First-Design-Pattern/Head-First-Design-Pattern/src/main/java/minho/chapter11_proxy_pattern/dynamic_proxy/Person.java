@@ -3,13 +3,18 @@ package minho.chapter11_proxy_pattern.dynamic_proxy;
 public interface Person {
 
     String getName();
+
     String getGender();
+
     String getInterests();
+
     int getGeekRating();
 
     void setName(String name);
-    void setGender(String gender);
-    void setInterests(String interests);
-    void setGeekRating(int rating);
 
+    void setGender(String gender);
+
+    void setInterests(String interests);
+
+    void setGeekRating(int rating);
 }

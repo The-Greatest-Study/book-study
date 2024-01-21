@@ -40,18 +40,18 @@ public class MatchMakingTestDrive {
     }
 
     Person getOwnerProxy(Person person) {
-        return (Person) Proxy.newProxyInstance(
-                person.getClass().getClassLoader(),
-                person.getClass().getInterfaces(),
-                new OwnerInvocationHandler(person)
-        );
+        return (Person)
+                Proxy.newProxyInstance(
+                        person.getClass().getClassLoader(),
+                        person.getClass().getInterfaces(),
+                        new OwnerInvocationHandler(person));
     }
 
     Person getNonOwnerProxy(Person person) {
-        return (Person) Proxy.newProxyInstance(
-                person.getClass().getClassLoader(),
-                person.getClass().getInterfaces(),
-                new NonOwnerInvocationHandler(person)
-        );
+        return (Person)
+                Proxy.newProxyInstance(
+                        person.getClass().getClassLoader(),
+                        person.getClass().getInterfaces(),
+                        new NonOwnerInvocationHandler(person));
     }
 }

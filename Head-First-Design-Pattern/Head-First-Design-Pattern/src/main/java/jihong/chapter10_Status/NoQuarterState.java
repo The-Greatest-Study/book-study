@@ -2,7 +2,7 @@ package jihong.chapter10_Status;
 
 public class NoQuarterState implements State {
     private static final long serialversionUID = 2L;
-    transient GumballMachine gumballMachine; //직렬화를 하지 않음
+    transient GumballMachine gumballMachine; // 직렬화를 하지 않음
 
     public NoQuarterState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;

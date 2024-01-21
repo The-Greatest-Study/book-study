@@ -1,6 +1,6 @@
 package minji.chapter11_proxyPattern;
 
-public class PersonImpl implements Person{
+public class PersonImpl implements Person {
     String name;
     String gender;
     String interests;
@@ -46,7 +46,7 @@ public class PersonImpl implements Person{
 
     public int getGeekRating() {
         if (ratingCount == 0) return 0;
-        return rating/ratingCount;
+        return rating / ratingCount;
     }
 
     public void setGeekRating(int rating) {

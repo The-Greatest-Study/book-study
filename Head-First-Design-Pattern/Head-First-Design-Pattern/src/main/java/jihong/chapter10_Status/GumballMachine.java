@@ -1,15 +1,14 @@
 package jihong.chapter10_Status;
 
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
 import jihong.chapter11_Proxy.GumballMachineRemote;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.rmi.RemoteException;
-import java.rmi.server.UnicastRemoteObject;
-
 @Getter
 public class GumballMachine extends UnicastRemoteObject implements GumballMachineRemote {
-    
+
     private static final long serialVersionUID = 2L;
     State soldOutState;
     State noQuarterState;
@@ -18,11 +17,9 @@ public class GumballMachine extends UnicastRemoteObject implements GumballMachin
     State winnerState;
     String location;
 
-    @Setter
-    State state = soldOutState;
+    @Setter State state = soldOutState;
     int count = 0;
 
-    
     public GumballMachine(String location, int count) throws RemoteException {
         soldOutState = new SoldOutState(this);
         noQuarterState = new NoQuarterState(this);
@@ -36,7 +33,7 @@ public class GumballMachine extends UnicastRemoteObject implements GumballMachin
         } else {
             state = soldOutState;
         }
-        
+
         this.location = location;
     }
 

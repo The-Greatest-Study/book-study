@@ -1,6 +1,5 @@
 package minji.chapter11_proxyPattern;
 
-import minji.chapter10_statePattern.GumballMachine;
 import minji.chapter10_statePattern.GumballMachineRemote;
 
 public class GumballMonitor {
@@ -18,6 +17,5 @@ public class GumballMonitor {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-
     }
 }

@@ -3,8 +3,7 @@ package minji.chapter10_statePattern;
 import java.io.Serial;
 
 public class SoldOutState implements State {
-    @Serial
-    private static final long serialVersionUID = 2L;
+    @Serial private static final long serialVersionUID = 2L;
     transient GumballMachine gumballMachine;
 
     public SoldOutState(GumballMachine gumballMachine) {

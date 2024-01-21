@@ -1,7 +1,5 @@
 package minji.chapter10_statePattern;
 
-import minji.chapter11_proxyPattern.GumballMonitor;
-
 import java.rmi.Naming;
 
 public class GumballMachineMonitorTestDrive {
@@ -16,9 +14,8 @@ public class GumballMachineMonitorTestDrive {
             count = Integer.parseInt(args[1]);
             GumballMachine gumballMachine = new GumballMachine(count, args[0]);
             Naming.rebind("//" + args[0] + "/gumballmachine", gumballMachine);
-        } catch(Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 }

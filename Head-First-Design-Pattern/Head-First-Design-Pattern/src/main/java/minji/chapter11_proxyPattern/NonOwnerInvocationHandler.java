@@ -21,7 +21,7 @@ public class NonOwnerInvocationHandler implements InvocationHandler {
             } else if (method.getName().startsWith("set")) {
                 throw new IllegalAccessException();
             }
-        } catch(InvocationTargetException e) {
+        } catch (InvocationTargetException e) {
             e.printStackTrace();
         }
         return null;

@@ -1,11 +1,12 @@
 package jihong.chapter11_Proxy;
 
-public class PersonImpl implements Person{
+public class PersonImpl implements Person {
     String name;
     String gender;
     String interests;
     int rating;
     int ratingCount = 0;
+
     @Override
     public String getName() {
         return null;
@@ -23,8 +24,8 @@ public class PersonImpl implements Person{
 
     @Override
     public int getGeekRating() {
-        if (ratingCount == 0 ) return 0;
-        return (rating/ratingCount);
+        if (ratingCount == 0) return 0;
+        return (rating / ratingCount);
     }
 
     @Override

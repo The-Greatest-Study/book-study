@@ -5,8 +5,7 @@ import java.rmi.*;
 import java.rmi.server.*;
 
 public class GumballMachine extends UnicastRemoteObject implements GumballMachineRemote {
-    @Serial
-    private static final long serialVersionUID = 2L;
+    @Serial private static final long serialVersionUID = 2L;
 
     State soldOutState;
     State noQuarterState;
@@ -18,7 +17,7 @@ public class GumballMachine extends UnicastRemoteObject implements GumballMachin
     int count;
     String location;
 
-    public GumballMachine(int count, String location) throws RemoteException{
+    public GumballMachine(int count, String location) throws RemoteException {
         soldOutState = new SoldOutState(this);
         noQuarterState = new NoQuarterState(this);
         hasQuarterState = new HasQuarterState(this);

@@ -1,8 +1,7 @@
 package minho.chapter11_proxy_pattern.remote_proxy;
 
-import minho.chapter10_state_pattern.GumballMachine;
-
 import java.rmi.Naming;
+import minho.chapter10_state_pattern.GumballMachine;
 
 public class GumballMachineTestDrive {
 
@@ -10,7 +9,7 @@ public class GumballMachineTestDrive {
         int count = 0;
         GumballMachine gumballMachine = null;
 
-        if(args.length < 2) {
+        if (args.length < 2) {
             System.out.println("GumballMachine <name> <inventory>");
             System.exit(1);
         }
@@ -24,5 +23,4 @@ public class GumballMachineTestDrive {
             e.printStackTrace();
         }
     }
-
 }

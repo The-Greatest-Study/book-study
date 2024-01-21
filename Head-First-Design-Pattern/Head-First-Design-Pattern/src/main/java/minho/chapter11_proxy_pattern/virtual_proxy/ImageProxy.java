@@ -1,10 +1,9 @@
 package minho.chapter11_proxy_pattern.virtual_proxy;
 
-import lombok.Getter;
-
-import javax.swing.*;
 import java.awt.*;
 import java.net.URL;
+import javax.swing.*;
+import lombok.Getter;
 
 public class ImageProxy implements Icon {
 
@@ -38,41 +37,41 @@ public class ImageProxy implements Icon {
 
     @Override
     public int getIconWidth() {
-//        return (imageIcon != null) ? imageIcon.getIconWidth() : 800;
+        //        return (imageIcon != null) ? imageIcon.getIconWidth() : 800;
         return state.getIconWidth();
     }
 
-    synchronized public void setImageIcon(ImageIcon imageIcon) {
+    public synchronized void setImageIcon(ImageIcon imageIcon) {
         this.imageIcon = imageIcon;
     }
 
     @Override
     public void paintIcon(Component c, Graphics g, int x, int y) {
-//        if(imageIcon != null) {
-//            imageIcon.paintIcon(c, g, x, y);
-//        } else {
-//            g.drawString("앨범 커버를 불러오는 중입니다. 잠시만 기다려 주세요.", x + 300, y + 190);
-//
-//            if(!retrieving) {
-//                retrieving = true;
-//
-//                retrievalThread = new Thread(() -> {
-//                    try {
-//                        setImageIcon(new ImageIcon(imageURL, "Album Cover"));
-//                        c.repaint();
-//                    } catch (Exception e) {
-//                        e.printStackTrace();
-//                    }
-//                });
-//                retrievalThread.start();
-//            }
-//        }
+        //        if(imageIcon != null) {
+        //            imageIcon.paintIcon(c, g, x, y);
+        //        } else {
+        //            g.drawString("앨범 커버를 불러오는 중입니다. 잠시만 기다려 주세요.", x + 300, y + 190);
+        //
+        //            if(!retrieving) {
+        //                retrieving = true;
+        //
+        //                retrievalThread = new Thread(() -> {
+        //                    try {
+        //                        setImageIcon(new ImageIcon(imageURL, "Album Cover"));
+        //                        c.repaint();
+        //                    } catch (Exception e) {
+        //                        e.printStackTrace();
+        //                    }
+        //                });
+        //                retrievalThread.start();
+        //            }
+        //        }
         state.paintIcon(c, g, x, y);
     }
 
     @Override
     public int getIconHeight() {
-//        return (imageIcon != null) ? imageIcon.getIconHeight() : 600;
+        //        return (imageIcon != null) ? imageIcon.getIconHeight() : 600;
         return state.getIconHeight();
     }
 
@@ -95,5 +94,4 @@ public class ImageProxy implements Icon {
     public void updateState(ImageIconState state) {
         this.state = state;
     }
-
 }

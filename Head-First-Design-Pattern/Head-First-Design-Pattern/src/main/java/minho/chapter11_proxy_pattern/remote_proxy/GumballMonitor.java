@@ -10,7 +10,7 @@ public class GumballMonitor {
         this.machine = machine;
     }
 
-    public static GumballMonitor from(GumballMachineRemote machine){
+    public static GumballMonitor from(GumballMachineRemote machine) {
         return new GumballMonitor(machine);
     }
 

@@ -1,8 +1,8 @@
 package minji.chapter11_proxyPattern;
 
-import javax.swing.*;
 import java.awt.*;
 import java.net.URL;
+import javax.swing.*;
 
 public class ImageProxy implements Icon {
     volatile ImageIcon imageIcon;
@@ -41,21 +41,23 @@ public class ImageProxy implements Icon {
         if (imageIcon != null) {
             imageIcon.paintIcon(c, g, x, y);
         } else {
-            g.drawString("앨범 커버를 불러오는 중입니다. 잠시만 기다려 주세요.", x+300, y+190);
+            g.drawString("앨범 커버를 불러오는 중입니다. 잠시만 기다려 주세요.", x + 300, y + 190);
             if (!retrieving) {
                 retrieving = true;
 
-                retrievalThread = new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        try {
-                            setImageIcon(new ImageIcon(imageURL, "Album Cover"));
-                            c.repaint();
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                    }
-                });
+                retrievalThread =
+                        new Thread(
+                                new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        try {
+                                            setImageIcon(new ImageIcon(imageURL, "Album Cover"));
+                                            c.repaint();
+                                        } catch (Exception e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                });
                 retrievalThread.start();
             }
         }

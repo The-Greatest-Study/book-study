@@ -1,6 +1,5 @@
 package minho.chapter11_proxy_pattern.remote_proxy;
 
-
 import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.NotBoundException;
@@ -10,14 +9,14 @@ public class GumballMonitorTestDrive {
 
     public static void main(String[] args) {
         String[] location = {
-                "rmi://santafe.mightygumball.com/gumballmachine",
-                "rmi://bouler.mightygumball.com/gumballmachine",
-                "rmi://austin.mightygumball.com/gumballmachine"
+            "rmi://santafe.mightygumball.com/gumballmachine",
+            "rmi://bouler.mightygumball.com/gumballmachine",
+            "rmi://austin.mightygumball.com/gumballmachine"
         };
 
         GumballMonitor[] monitors = new GumballMonitor[location.length];
 
-        for(int i = 0; i < location.length; i++) {
+        for (int i = 0; i < location.length; i++) {
             try {
                 GumballMachineRemote machine = (GumballMachineRemote) Naming.lookup(location[i]);
                 monitors[i] = GumballMonitor.from(machine);
@@ -27,9 +26,8 @@ public class GumballMonitorTestDrive {
             }
         }
 
-        for(GumballMonitor monitor : monitors) {
+        for (GumballMonitor monitor : monitors) {
             monitor.report();
         }
     }
-
 }

@@ -1,7 +1,7 @@
 package minho.chapter11_proxy_pattern.virtual_proxy;
 
-import javax.swing.*;
 import java.awt.*;
+import javax.swing.*;
 
 public class ImageIconLoadedState implements ImageIconState {
 
@@ -24,7 +24,7 @@ public class ImageIconLoadedState implements ImageIconState {
     @Override
     public void paintIcon(Component c, Graphics g, int x, int y) {
         ImageIcon imageIcon = imageProxy.getImageIcon();
-//        imageIcon.paintIcon(c, g, x, y);
+        //        imageIcon.paintIcon(c, g, x, y);
         g.drawString("앨범 커버 예시", x + 300, y + 190);
     }
 

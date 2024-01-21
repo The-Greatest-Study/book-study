@@ -1,10 +1,9 @@
 package minho.chapter10_state_pattern;
 
-import lombok.Getter;
-import minho.chapter11_proxy_pattern.remote_proxy.GumballMachineRemote;
-
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+import lombok.Getter;
+import minho.chapter11_proxy_pattern.remote_proxy.GumballMachineRemote;
 
 @Getter
 public class GumballMachine extends UnicastRemoteObject implements GumballMachineRemote {

@@ -21,7 +21,7 @@ public class OwnerInvocationHandler implements InvocationHandler {
             } else if (method.getName().startsWith("set")) {
                 return method.invoke(person, args);
             }
-        } catch(InvocationTargetException e) {
+        } catch (InvocationTargetException e) {
             e.printStackTrace();
         }
         return null;

@@ -7,11 +7,9 @@ import java.rmi.server.UnicastRemoteObject;
 
 public class MyRemoteImpl extends UnicastRemoteObject implements MyRemote {
 
-    @Serial
-    private static final long serialVersionUID = 1L;
+    @Serial private static final long serialVersionUID = 1L;
 
-    public MyRemoteImpl() throws RemoteException {
-    }
+    public MyRemoteImpl() throws RemoteException {}
 
     @Override
     public String sayHello() throws RemoteException {
@@ -25,6 +23,5 @@ public class MyRemoteImpl extends UnicastRemoteObject implements MyRemote {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-
     }
 }
