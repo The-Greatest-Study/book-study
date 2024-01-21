@@ -1,9 +1,11 @@
 package minho.chapter10_state_pattern;
 
+import java.rmi.RemoteException;
+
 public class GumballMachineTestDrive {
 
-    public static void main(String[] args) {
-        GumballMachine gumballMachine = GumballMachine.create(5);
+    public static void main(String[] args) throws RemoteException {
+        GumballMachine gumballMachine = GumballMachine.create("Austin", 5);
 
         System.out.println(gumballMachine);
 

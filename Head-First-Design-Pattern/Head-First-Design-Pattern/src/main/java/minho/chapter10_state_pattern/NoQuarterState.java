@@ -2,7 +2,8 @@ package minho.chapter10_state_pattern;
 
 public class NoQuarterState implements State {
 
-    GumballMachine gumballMachine;
+    private static final long serialVersionUID = 2L;
+    transient GumballMachine gumballMachine;
 
     private NoQuarterState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;

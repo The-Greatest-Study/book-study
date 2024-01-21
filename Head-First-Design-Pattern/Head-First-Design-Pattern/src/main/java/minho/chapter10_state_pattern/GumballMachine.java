@@ -1,21 +1,27 @@
 package minho.chapter10_state_pattern;
 
-import static minho.chapter10_state_pattern.constant.MachineConstant.*;
-
 import lombok.Getter;
+import minho.chapter11_proxy_pattern.remote_proxy.GumballMachineRemote;
 
-public class GumballMachine {
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
 
-    @Getter State soldOutState;
-    @Getter State noQuarterState;
-    @Getter State hasQuarterState;
-    @Getter State soldState;
-    @Getter State winnerState;
+@Getter
+public class GumballMachine extends UnicastRemoteObject implements GumballMachineRemote {
+
+    private static final long serialVersionUID = 2L;
+
+    State soldOutState;
+    State noQuarterState;
+    State hasQuarterState;
+    State soldState;
+    State winnerState;
 
     State state;
     int count = 0;
+    String location;
 
-    private GumballMachine(int numberOfGumballs) {
+    private GumballMachine(String location, int numberOfGumballs) throws RemoteException {
         noQuarterState = NoQuarterState.from(this);
         hasQuarterState = HasQuarterState.from(this);
         soldState = SoldState.from(this);
@@ -28,10 +34,12 @@ public class GumballMachine {
         } else {
             state = soldOutState;
         }
+
+        this.location = location;
     }
 
-    public static GumballMachine create(int count) {
-        return new GumballMachine(count);
+    public static GumballMachine create(String location, int count) throws RemoteException {
+        return new GumballMachine(location, count);
     }
 
     public void insertQuarter() {
