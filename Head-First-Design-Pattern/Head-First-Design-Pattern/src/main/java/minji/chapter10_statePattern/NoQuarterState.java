@@ -1,7 +1,11 @@
 package minji.chapter10_statePattern;
 
+import java.io.Serial;
+
 public class NoQuarterState implements State {
-    GumballMachine gumballMachine;
+    @Serial
+    private static final long serialVersionUID = 2L;
+    transient GumballMachine gumballMachine;
 
     public NoQuarterState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;

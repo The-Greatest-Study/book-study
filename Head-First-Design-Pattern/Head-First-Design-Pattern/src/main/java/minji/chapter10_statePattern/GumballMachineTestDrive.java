@@ -1,8 +1,15 @@
 package minji.chapter10_statePattern;
 
+import java.rmi.RemoteException;
+
 public class GumballMachineTestDrive {
     public static void main(String[] args) {
-        GumballMachine gumballMachine = new GumballMachine(5);
+        GumballMachine gumballMachine = null;
+        try {
+            gumballMachine = new GumballMachine(5, "Seoul");
+        } catch (RemoteException e) {
+            throw new RuntimeException(e);
+        }
 
         System.out.println(gumballMachine);
 
@@ -39,7 +46,12 @@ public class GumballMachineTestDrive {
 
         System.out.println("=========TEST DRIVE 2=========");
 
-        GumballMachine gumballMachine2 = new GumballMachine(5);
+        GumballMachine gumballMachine2 = null;
+        try {
+            gumballMachine2 = new GumballMachine(5, "Seoul");
+        } catch (RemoteException e) {
+            throw new RuntimeException(e);
+        }
 
         System.out.println(gumballMachine2);
 

@@ -1,7 +1,11 @@
 package minji.chapter10_statePattern;
 
+import java.io.Serial;
+
 public class WinnerState implements State {
-    GumballMachine gumballMachine;
+    @Serial
+    private static final long serialVersionUID = 2L;
+    transient GumballMachine gumballMachine;
 
     public WinnerState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;

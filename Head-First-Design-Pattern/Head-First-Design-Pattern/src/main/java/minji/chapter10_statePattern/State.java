@@ -1,6 +1,8 @@
 package minji.chapter10_statePattern;
 
-public interface State {
+import java.io.Serializable;
+
+public interface State extends Serializable {
     public void insertQuarter();
 
     public void ejectQuarter();

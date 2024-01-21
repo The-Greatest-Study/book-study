@@ -1,6 +1,12 @@
 package minji.chapter10_statePattern;
 
-public class GumballMachine {
+import java.io.Serial;
+import java.rmi.*;
+import java.rmi.server.*;
+
+public class GumballMachine extends UnicastRemoteObject implements GumballMachineRemote {
+    @Serial
+    private static final long serialVersionUID = 2L;
 
     State soldOutState;
     State noQuarterState;
@@ -10,8 +16,9 @@ public class GumballMachine {
 
     State state;
     int count;
+    String location;
 
-    public GumballMachine(int count) {
+    public GumballMachine(int count, String location) throws RemoteException{
         soldOutState = new SoldOutState(this);
         noQuarterState = new NoQuarterState(this);
         hasQuarterState = new HasQuarterState(this);
@@ -19,6 +26,7 @@ public class GumballMachine {
         winnerState = new WinnerState(this);
 
         this.count = count;
+        this.location = location;
         if (count > 0) {
             state = noQuarterState;
         } else {
@@ -83,6 +91,10 @@ public class GumballMachine {
 
     public int getCount() {
         return count;
+    }
+
+    public String getLocation() {
+        return location;
     }
 
     @Override
