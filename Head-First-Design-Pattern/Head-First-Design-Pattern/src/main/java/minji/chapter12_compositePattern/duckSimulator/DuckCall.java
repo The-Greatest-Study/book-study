@@ -1,17 +1,15 @@
-package minji.chapter12_compositePattern;
+package minji.chapter12_compositePattern.duckSimulator;
 
-public class GooseAdapter implements Quackable{
-    Goose goose;
+public class DuckCall implements Quackable{
     Observable observable;
 
-    public GooseAdapter(Goose goose) {
-        this.goose = goose;
+    public DuckCall() {
         observable = new Observable(this);
     }
 
     @Override
     public void quack() {
-        goose.honk();
+        System.out.println("꽉꽉");
         notifyObservers();
     }
 

@@ -1,4 +1,4 @@
-package minji.chapter12_compositePattern;
+package minji.chapter12_compositePattern.duckSimulator;
 
 import java.util.ArrayList;
 import java.util.Iterator;

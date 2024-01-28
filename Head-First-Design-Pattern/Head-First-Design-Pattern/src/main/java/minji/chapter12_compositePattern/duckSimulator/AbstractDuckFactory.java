@@ -1,4 +1,4 @@
-package minji.chapter12_compositePattern;
+package minji.chapter12_compositePattern.duckSimulator;
 
 public abstract class AbstractDuckFactory {
     public abstract Quackable createMallardDuck();

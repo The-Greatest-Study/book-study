@@ -1,16 +1,16 @@
-package minji.chapter12_compositePattern;
+package minji.chapter12_compositePattern.duckSimulator;
 
-public class RedheadDuck implements Quackable {
+public class RubberDuck implements Quackable{
 
     Observable observable;
 
-    public RedheadDuck() {
+    public RubberDuck() {
         observable = new Observable(this);
     }
 
     @Override
     public void quack() {
-        System.out.println("꽥꽥");
+        System.out.println("삑삑");
         notifyObservers();
     }
 
@@ -23,5 +23,4 @@ public class RedheadDuck implements Quackable {
     public void notifyObservers() {
         observable.notifyObservers();
     }
-
 }

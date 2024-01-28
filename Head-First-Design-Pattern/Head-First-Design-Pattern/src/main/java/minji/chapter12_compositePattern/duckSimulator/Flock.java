@@ -1,6 +1,4 @@
-package minji.chapter12_compositePattern;
-
-import minji.chapter01_strategyPattern.impl.Quack;
+package minji.chapter12_compositePattern.duckSimulator;
 
 import java.util.ArrayList;
 import java.util.Iterator;

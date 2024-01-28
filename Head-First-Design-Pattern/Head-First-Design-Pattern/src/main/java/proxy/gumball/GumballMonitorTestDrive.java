@@ -11,10 +11,10 @@ public class GumballMonitorTestDrive {
             "rmi://austin.mightygumball.com/gumballmachine"
         };
 
-        if (args.length >= 0) {
-            location = new String[1];
-            location[0] = "rmi://" + args[0] + "/gumballmachine";
-        }
+//        if (args.length >= 0) {
+//            location = new String[1];
+//            location[0] = "rmi://santafe.mightygumball.com/gumballmachine";
+//        }
 
         GumballMonitor[] monitor = new GumballMonitor[location.length];
 

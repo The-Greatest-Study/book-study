@@ -1,7 +1,4 @@
-package minji.chapter12_compositePattern;
-
-import minji.chapter01_strategyPattern.Duck;
-import minji.chapter01_strategyPattern.impl.Quack;
+package minji.chapter12_compositePattern.duckSimulator;
 
 public class DuckSimulator {
     public static void main(String[] args) {
