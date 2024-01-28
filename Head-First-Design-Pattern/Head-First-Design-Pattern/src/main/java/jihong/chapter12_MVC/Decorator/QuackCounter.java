@@ -1,18 +1,16 @@
 package jihong.chapter12_MVC.Decorator;
 
 import jihong.chapter12_MVC.Duck.Quackable;
-import jihong.chapter12_MVC.Observable.Observable;
 import jihong.chapter12_MVC.Observable.Observer;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-//데코레이터
+// 데코레이터
 @Getter
 public class QuackCounter implements Quackable {
     private Quackable duck;
     private static int numberOfQuacks;
 
-    public QuackCounter(Quackable duck){
+    public QuackCounter(Quackable duck) {
         this.duck = duck;
     }
 
