@@ -34,5 +34,4 @@ public class GooseAdapter implements Quackable {
     public String toString() {
         return "거위";
     }
-
 }

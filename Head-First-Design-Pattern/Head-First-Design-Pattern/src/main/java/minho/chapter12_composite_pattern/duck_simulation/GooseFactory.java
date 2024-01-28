@@ -2,7 +2,6 @@ package minho.chapter12_composite_pattern.duck_simulation;
 
 public class GooseFactory extends AbstractDuckFactory {
 
-
     @Override
     public Quackable createMallardDuck() {
         throw new IllegalCallerException();

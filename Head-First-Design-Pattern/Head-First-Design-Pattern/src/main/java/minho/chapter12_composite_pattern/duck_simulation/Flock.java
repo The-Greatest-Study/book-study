@@ -5,17 +5,15 @@ import java.util.Iterator;
 import java.util.List;
 
 public class Flock implements Quackable {
-    
+
     List<Quackable> quackers = new ArrayList<>();
 
-    private Flock() {
-
-    }
+    private Flock() {}
 
     public static Flock newInstance() {
         return new Flock();
     }
-    
+
     public void add(Quackable quacker) {
         quackers.add(quacker);
     }
@@ -23,7 +21,7 @@ public class Flock implements Quackable {
     public void addQuackers(List<Quackable> quackers) {
         this.quackers.addAll(quackers);
     }
-    
+
     /*
      * 반복자 패턴
      */
@@ -33,16 +31,16 @@ public class Flock implements Quackable {
         while (iterator.hasNext()) {
             iterator.next().quack();
         }
-        
+
         // 향상된 for문을 사용해도 무관
-//        for(Quackable quacker : quackers) {
-//            quacker.quack();
-//        }
+        //        for(Quackable quacker : quackers) {
+        //            quacker.quack();
+        //        }
     }
 
     @Override
     public void registerObserver(Observer observer) {
-        for(Quackable duck : quackers) {
+        for (Quackable duck : quackers) {
             duck.registerObserver(observer);
         }
     }

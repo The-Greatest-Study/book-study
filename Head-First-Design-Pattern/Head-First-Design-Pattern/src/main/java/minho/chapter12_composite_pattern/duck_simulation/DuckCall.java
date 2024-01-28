@@ -1,6 +1,6 @@
 package minho.chapter12_composite_pattern.duck_simulation;
 
-public class DuckCall implements Quackable{
+public class DuckCall implements Quackable {
 
     Observable observable;
 
@@ -8,7 +8,7 @@ public class DuckCall implements Quackable{
         this.observable = Observable.from(this);
     }
 
-    public static DuckCall newInstance () {
+    public static DuckCall newInstance() {
         return new DuckCall();
     }
 

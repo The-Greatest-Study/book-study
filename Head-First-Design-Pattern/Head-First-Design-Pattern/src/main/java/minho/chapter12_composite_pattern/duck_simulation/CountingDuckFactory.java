@@ -1,6 +1,6 @@
 package minho.chapter12_composite_pattern.duck_simulation;
 
-public class CountingDuckFactory extends AbstractDuckFactory{
+public class CountingDuckFactory extends AbstractDuckFactory {
 
     @Override
     public Quackable createMallardDuck() {
@@ -26,5 +26,4 @@ public class CountingDuckFactory extends AbstractDuckFactory{
     public Quackable createGooseDuck() {
         throw new IllegalCallerException();
     }
-
 }

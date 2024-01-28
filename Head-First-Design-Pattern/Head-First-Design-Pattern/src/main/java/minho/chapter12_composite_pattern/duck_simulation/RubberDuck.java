@@ -32,5 +32,4 @@ public class RubberDuck implements Quackable {
     public String toString() {
         return "고무 오리";
     }
-
 }

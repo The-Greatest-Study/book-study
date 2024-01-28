@@ -14,17 +14,21 @@ public class DuckSimulator {
 
     private void simulate(AbstractDuckFactory duckFactory, AbstractDuckFactory gooseFactory) {
         Flock flockOfDucks = Flock.newInstance();
-        flockOfDucks.addQuackers(Arrays.asList(duckFactory.createRedheadDuck(),
-                duckFactory.createDuckCall(),
-                duckFactory.createRubberDuck(),
-                gooseFactory.createGooseDuck()));
+        flockOfDucks.addQuackers(
+                Arrays.asList(
+                        duckFactory.createRedheadDuck(),
+                        duckFactory.createDuckCall(),
+                        duckFactory.createRubberDuck(),
+                        gooseFactory.createGooseDuck()));
 
         // 물오리 무리
         Flock flockOfMallards = Flock.newInstance();
-        flockOfMallards.addQuackers(Arrays.asList(duckFactory.createMallardDuck(),
-                duckFactory.createMallardDuck(),
-                duckFactory.createMallardDuck(),
-                duckFactory.createMallardDuck()));
+        flockOfMallards.addQuackers(
+                Arrays.asList(
+                        duckFactory.createMallardDuck(),
+                        duckFactory.createMallardDuck(),
+                        duckFactory.createMallardDuck(),
+                        duckFactory.createMallardDuck()));
 
         // 물오리 무리를 오리 무리에 넣습니다.
         flockOfDucks.add(flockOfMallards);
@@ -46,5 +50,4 @@ public class DuckSimulator {
     private void simulate(Quackable duck) {
         duck.quack();
     }
-
 }
