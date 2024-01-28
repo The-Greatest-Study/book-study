@@ -3,12 +3,13 @@ package jihong.chapter12_MVC.Duck;
 import jihong.chapter12_MVC.Observable.Observable;
 import jihong.chapter12_MVC.Observable.Observer;
 
-public class Mallardduck implements Quackable{
+public class Mallardduck implements Quackable {
     Observable observable;
 
-    public Mallardduck(){
+    public Mallardduck() {
         observable = new Observable(this);
     }
+
     @Override
     public void quack() {
         System.out.println("꽥꽥");

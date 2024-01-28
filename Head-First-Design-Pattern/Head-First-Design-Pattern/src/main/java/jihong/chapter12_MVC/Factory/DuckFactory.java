@@ -2,8 +2,7 @@ package jihong.chapter12_MVC.Factory;
 
 import jihong.chapter12_MVC.Duck.*;
 
-public class DuckFactory extends AbstractDuckFactory{
-
+public class DuckFactory extends AbstractDuckFactory {
 
     @Override
     public Quackable createMallarDuck() {

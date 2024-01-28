@@ -1,7 +1,6 @@
 package jihong.chapter12_MVC;
 
 import jihong.chapter12_MVC.Adapter.GooseAdapter;
-import jihong.chapter12_MVC.Decorator.QuackCounter;
 import jihong.chapter12_MVC.Duck.Flock;
 import jihong.chapter12_MVC.Duck.Goose;
 import jihong.chapter12_MVC.Duck.Quackable;
@@ -16,9 +15,9 @@ public class DuckSimulator {
         simulator.simulate(duckFactory);
     }
 
-    private void simulate(AbstractDuckFactory duckFactory){
-        Quackable redheadDuck =duckFactory.createRedheadDuck();
-        Quackable duckCall =duckFactory.createDuckCall();
+    private void simulate(AbstractDuckFactory duckFactory) {
+        Quackable redheadDuck = duckFactory.createRedheadDuck();
+        Quackable duckCall = duckFactory.createDuckCall();
         Quackable rubberDuck = duckFactory.createRubberDuck();
         Quackable gooseDuck = new GooseAdapter(new Goose());
 
@@ -56,10 +55,10 @@ public class DuckSimulator {
 
         simulate(flockOfDucks);
 
-//        System.out.println("오리가 소리 낸 횟수: " + QuackCounter.class + " 번");
+        //        System.out.println("오리가 소리 낸 횟수: " + QuackCounter.class + " 번");
     }
 
-    private void simulate(Quackable duck){
+    private void simulate(Quackable duck) {
         duck.quack();
     }
 }

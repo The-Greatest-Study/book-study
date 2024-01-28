@@ -1,6 +1,6 @@
 package jihong.chapter12_MVC.Observable;
 
-public class Quackologist implements Observer{
+public class Quackologist implements Observer {
 
     @Override
     public void update(QuackObservable duck) {
