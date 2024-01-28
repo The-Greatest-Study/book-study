@@ -1,4 +1,7 @@
-package jihong.chapter12_MVC;
+package jihong.chapter12_MVC.Factory;
+
+import jihong.chapter12_MVC.Decorator.QuackCounter;
+import jihong.chapter12_MVC.Duck.*;
 
 public class CountingDuckFactory extends AbstractDuckFactory{
 

@@ -1,2 +1,4 @@
-package jihong.chapter12_MVC.BeatModel;public class BeatObserver {
+package jihong.chapter12_MVC.BeatModel;
+
+public class BeatObserver {
 }

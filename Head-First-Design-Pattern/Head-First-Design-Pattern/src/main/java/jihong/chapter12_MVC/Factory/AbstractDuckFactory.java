@@ -1,4 +1,6 @@
-package jihong.chapter12_MVC;
+package jihong.chapter12_MVC.Factory;
+
+import jihong.chapter12_MVC.Duck.Quackable;
 
 public abstract class AbstractDuckFactory {
     public abstract Quackable createMallarDuck();

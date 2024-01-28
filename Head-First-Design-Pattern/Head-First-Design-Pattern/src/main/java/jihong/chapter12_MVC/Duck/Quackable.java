@@ -1,5 +1,7 @@
-package jihong.chapter12_MVC;
+package jihong.chapter12_MVC.Duck;
 
-public interface Quackable {
+import jihong.chapter12_MVC.Observable.QuackObservable;
+
+public interface Quackable extends QuackObservable {
     public void quack();
 }

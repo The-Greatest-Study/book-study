@@ -1,4 +1,4 @@
-package jihong.chapter12_MVC;
+package jihong.chapter12_MVC.Duck;
 
 public class Goose {
     public void honk(){
