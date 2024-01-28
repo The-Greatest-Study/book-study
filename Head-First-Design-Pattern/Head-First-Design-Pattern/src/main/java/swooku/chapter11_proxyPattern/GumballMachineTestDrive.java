@@ -7,12 +7,12 @@ public class GumballMachineTestDrive {
         GumballMachineRemote gumballMachine = null;
         int count = 0;
 
-        if(args.length < 2) {
+        if (args.length < 2) {
             System.out.println("Gumball Machine <name> <inventory>");
             System.exit(1);
         }
 
-        try{
+        try {
             count = Integer.parseInt(args[1]);
             gumballMachine = new GumballMachine(args[0], count);
             System.out.println("//" + args[0] + "/gumballmachine");

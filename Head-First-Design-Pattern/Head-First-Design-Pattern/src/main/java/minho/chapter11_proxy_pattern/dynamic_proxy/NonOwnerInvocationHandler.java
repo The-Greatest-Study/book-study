@@ -27,5 +27,4 @@ public class NonOwnerInvocationHandler implements InvocationHandler {
         }
         return null;
     }
-
 }

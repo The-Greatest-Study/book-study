@@ -1,6 +1,6 @@
 package minji.chapter12_compositePattern;
 
-public class RubberDuck implements Quackable{
+public class RubberDuck implements Quackable {
 
     Observable observable;
 

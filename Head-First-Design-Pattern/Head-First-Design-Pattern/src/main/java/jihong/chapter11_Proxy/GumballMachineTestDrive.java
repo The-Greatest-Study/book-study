@@ -8,7 +8,6 @@ public class GumballMachineTestDrive {
         int count = 0;
         GumballMachine gumballMachine = null;
 
-
         try {
             count = Integer.parseInt("100");
 

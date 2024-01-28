@@ -1,10 +1,8 @@
 package swooku.chapter11_proxyPattern.StateType;
 
 import java.util.Random;
-
 import swooku.chapter11_proxyPattern.GumballMachine;
 import swooku.chapter11_proxyPattern.State;
-
 
 public class HasQuarterState implements State {
     Random randomWinner = new Random(System.currentTimeMillis());

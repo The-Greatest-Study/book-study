@@ -16,7 +16,7 @@ public class OwnerInvocationHandler implements InvocationHandler {
     public Object invoke(Object proxy, Method method, Object[] args) throws IllegalAccessException {
 
         try {
-            if(method.getName().startsWith("get")) {
+            if (method.getName().startsWith("get")) {
                 return method.invoke(person, args);
             } else if (method.getName().equals("setGeekRating")) {
                 throw new IllegalAccessException();

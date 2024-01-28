@@ -1,6 +1,6 @@
 package minji.chapter12_compositePattern;
 
-public class GooseAdapter implements Quackable{
+public class GooseAdapter implements Quackable {
     Goose goose;
     Observable observable;
 

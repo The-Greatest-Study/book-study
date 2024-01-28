@@ -1,10 +1,9 @@
 package minji.chapter12_compositePattern;
 
-
 import lombok.Getter;
 
 @Getter
-public class QuackCounter implements Quackable{
+public class QuackCounter implements Quackable {
     Quackable duck;
 
     static int numberOfQuacks;
