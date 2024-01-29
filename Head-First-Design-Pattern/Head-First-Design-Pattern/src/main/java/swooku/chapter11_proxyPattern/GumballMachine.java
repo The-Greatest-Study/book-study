@@ -2,15 +2,14 @@ package swooku.chapter11_proxyPattern;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
-
 import lombok.Getter;
 import swooku.chapter11_proxyPattern.StateType.*;
 
 @Getter
-public class GumballMachine extends UnicastRemoteObject implements GumballMachineRemote{
+public class GumballMachine extends UnicastRemoteObject implements GumballMachineRemote {
     private static final long serialVersionUID = 2L;
 
-    //현재 위치 기능 추가
+    // 현재 위치 기능 추가
     String location;
 
     State soldOutState;
@@ -22,8 +21,8 @@ public class GumballMachine extends UnicastRemoteObject implements GumballMachin
     State state;
     int count = 0;
 
-    public GumballMachine(String location, int numberGumballs) throws RemoteException{
-        //현재 위치 기능 추가
+    public GumballMachine(String location, int numberGumballs) throws RemoteException {
+        // 현재 위치 기능 추가
         this.location = location;
 
         soldOutState = new SoldOutState(this);

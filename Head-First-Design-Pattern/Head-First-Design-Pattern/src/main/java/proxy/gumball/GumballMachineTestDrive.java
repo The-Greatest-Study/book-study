@@ -8,10 +8,10 @@ public class GumballMachineTestDrive {
         GumballMachineRemote gumballMachine = null;
         int count;
 
-//        if (args.length < 2) {
-//            System.out.println("GumballMachine <name> <inventory>");
-//            System.exit(1);
-//        }
+        //        if (args.length < 2) {
+        //            System.out.println("GumballMachine <name> <inventory>");
+        //            System.exit(1);
+        //        }
 
         try {
             count = Integer.parseInt("100");

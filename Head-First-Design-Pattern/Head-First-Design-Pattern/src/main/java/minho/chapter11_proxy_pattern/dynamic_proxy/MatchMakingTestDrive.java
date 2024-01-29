@@ -77,5 +77,4 @@ public class MatchMakingTestDrive {
     Person getPersonFromDatabase(String name) {
         return (Person) datingDB.get(name);
     }
-
 }

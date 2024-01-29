@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Observable implements QuackObservable{
+public class Observable implements QuackObservable {
     List<Observer> observers = new ArrayList<Observer>();
     QuackObservable duck;
 

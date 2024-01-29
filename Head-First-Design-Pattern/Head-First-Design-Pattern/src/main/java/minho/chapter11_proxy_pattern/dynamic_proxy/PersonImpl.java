@@ -25,7 +25,7 @@ public class PersonImpl implements Person {
 
     @Override
     public int getGeekRating() {
-        return (ratingCount > 0) ? rating/ratingCount : 0;
+        return (ratingCount > 0) ? rating / ratingCount : 0;
     }
 
     @Override

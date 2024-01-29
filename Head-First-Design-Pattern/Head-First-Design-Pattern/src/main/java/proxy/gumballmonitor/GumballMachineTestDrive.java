@@ -5,10 +5,10 @@ public class GumballMachineTestDrive {
     public static void main(String[] args) {
         int count = 0;
 
-//        if (args.length < 2) {
-//            System.out.println("GumballMachine <name> <inventory>");
-//            System.exit(1);
-//        }
+        //        if (args.length < 2) {
+        //            System.out.println("GumballMachine <name> <inventory>");
+        //            System.exit(1);
+        //        }
 
         try {
             count = Integer.parseInt("100");

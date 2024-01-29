@@ -23,5 +23,4 @@ public class RedheadDuck implements Quackable {
     public void notifyObservers() {
         observable.notifyObservers();
     }
-
 }
