@@ -1,4 +1,4 @@
-package jihong.chapter12_MVC.Observable;
+package swooku.chapter12_CompositePattern;
 
 public interface QuackObservable {
     public void registerObserver(Observer observer);

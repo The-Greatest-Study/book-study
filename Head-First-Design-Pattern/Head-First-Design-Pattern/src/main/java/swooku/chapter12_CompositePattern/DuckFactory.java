@@ -1,12 +1,10 @@
-package jihong.chapter12_MVC.Factory;
-
-import jihong.chapter12_MVC.Duck.*;
+package swooku.chapter12_CompositePattern;
 
 public class DuckFactory extends AbstractDuckFactory {
 
     @Override
-    public Quackable createMallarDuck() {
-        return new Mallardduck();
+    public Quackable createMallardDuck() {
+        return new MallardDuck();
     }
 
     @Override

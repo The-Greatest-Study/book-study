@@ -1,32 +1,30 @@
-package jihong.chapter12_MVC.Decorator;
+package swooku.chapter12_CompositePattern;
 
-import jihong.chapter12_MVC.Duck.Quackable;
-import jihong.chapter12_MVC.Observable.Observer;
-import lombok.Getter;
-
-// 데코레이터
-@Getter
 public class QuackCounter implements Quackable {
-    private Quackable duck;
-    private static int numberOfQuacks;
+    Observable observable;
+    Quackable duck;
+    static int numberOfQuacks;
 
     public QuackCounter(Quackable duck) {
         this.duck = duck;
     }
 
-    @Override
     public void quack() {
         duck.quack();
         numberOfQuacks++;
     }
 
+    public static int getQuacks() {
+        return numberOfQuacks;
+    }
+
     @Override
     public void registerObserver(Observer observer) {
-        duck.registerObserver(observer);
+        observable.registerObserver(observer);
     }
 
     @Override
     public void notifyObservers() {
-        duck.notifyObservers();
+        observable.notifyObservers();
     }
 }

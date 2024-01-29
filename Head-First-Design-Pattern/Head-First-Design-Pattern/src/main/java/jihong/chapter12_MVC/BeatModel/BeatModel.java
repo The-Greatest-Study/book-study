@@ -1,16 +1,13 @@
 package jihong.chapter12_MVC.BeatModel;
 
-import lombok.extern.log4j.Log4j;
-import lombok.extern.log4j.Log4j2;
-
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Clip;
-import javax.sound.sampled.Line;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.Line;
 
-public class BeatModel implements BeatModelInterface, Runnable{
+public class BeatModel implements BeatModelInterface, Runnable {
     List<BeatObserver> beatObservers = new ArrayList<>();
     List<BPMObserver> bpmObservers = new ArrayList<>();
 
@@ -18,19 +15,17 @@ public class BeatModel implements BeatModelInterface, Runnable{
     Thread thread;
     boolean stop = false;
     Clip clip;
-    @Override
-    public void run() {
-
-    }
 
     @Override
+    public void run() {}
 
+    @Override
     public void initialize() {
         try {
             File resource = new File("clap.wav");
             clip = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
             clip.open(AudioSystem.getAudioInputStream(resource));
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }
@@ -38,7 +33,7 @@ public class BeatModel implements BeatModelInterface, Runnable{
     @Override
     public void on() {
         bpm = 90;
-//        notifyBPMObservers();
+        //        notifyBPMObservers();
         thread = new Thread(this);
         stop = false;
         thread.start();
@@ -46,15 +41,14 @@ public class BeatModel implements BeatModelInterface, Runnable{
 
     @Override
     public void off() {
-//        stopBeat();
+        //        stopBeat();
         stop = true;
-
     }
 
     @Override
     public void setBPM(int bpm) {
         this.bpm = bpm;
-//        notifyBPMObservers();
+        //        notifyBPMObservers();
     }
 
     @Override
@@ -63,22 +57,14 @@ public class BeatModel implements BeatModelInterface, Runnable{
     }
 
     @Override
-    public void registerObserver(BeatObserver o) {
-
-    }
+    public void registerObserver(BeatObserver o) {}
 
     @Override
-    public void removeObserver(BeatObserver o) {
-
-    }
+    public void removeObserver(BeatObserver o) {}
 
     @Override
-    public void registerObserver(BPMObserver o) {
-
-    }
+    public void registerObserver(BPMObserver o) {}
 
     @Override
-    public void removeObserver(BPMObserver o) {
-
-    }
+    public void removeObserver(BPMObserver o) {}
 }

@@ -1,13 +1,11 @@
-package jihong.chapter12_MVC.Observable;
+package swooku.chapter12_CompositePattern;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import lombok.AllArgsConstructor;
 
-@AllArgsConstructor
 public class Observable implements QuackObservable {
-    List<Observer> observers = new ArrayList<>();
+    List<Observer> observers = new ArrayList<Observer>();
     QuackObservable duck;
 
     public Observable(QuackObservable duck) {
@@ -21,7 +19,7 @@ public class Observable implements QuackObservable {
 
     @Override
     public void notifyObservers() {
-        Iterator iterator = observers.iterator();
+        Iterator<Observer> iterator = observers.iterator();
         while (iterator.hasNext()) {
             Observer observer = (Observer) iterator.next();
             observer.update(duck);

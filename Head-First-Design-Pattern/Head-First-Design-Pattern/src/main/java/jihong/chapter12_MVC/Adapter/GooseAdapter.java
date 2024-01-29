@@ -10,7 +10,7 @@ public class GooseAdapter implements Quackable {
 
     Observable observable;
 
-    public GooseAdapter(Goose goose){
+    public GooseAdapter(Goose goose) {
         this.goose = goose;
     }
 
@@ -19,14 +19,9 @@ public class GooseAdapter implements Quackable {
         goose.honk();
     }
 
+    @Override
+    public void registerObserver(Observer observer) {}
 
     @Override
-    public void registerObserver(Observer observer) {
-
-    }
-
-    @Override
-    public void notifyObservers() {
-
-    }
+    public void notifyObservers() {}
 }

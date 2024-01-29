@@ -1,6 +1,5 @@
 package jihong.chapter12_MVC.BeatModel;
 
-
 public interface BeatModelInterface {
     void initialize();
 
@@ -13,7 +12,10 @@ public interface BeatModelInterface {
     int getBPM();
 
     void registerObserver(BeatObserver o);
+
     void removeObserver(BeatObserver o);
+
     void registerObserver(BPMObserver o);
+
     void removeObserver(BPMObserver o);
 }

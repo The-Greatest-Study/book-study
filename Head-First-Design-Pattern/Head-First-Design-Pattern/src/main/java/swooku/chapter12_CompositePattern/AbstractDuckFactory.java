@@ -1,9 +1,8 @@
-package jihong.chapter12_MVC.Factory;
-
-import jihong.chapter12_MVC.Duck.Quackable;
+package swooku.chapter12_CompositePattern;
 
 public abstract class AbstractDuckFactory {
-    public abstract Quackable createMallarDuck();
+
+    public abstract Quackable createMallardDuck();
 
     public abstract Quackable createRedheadDuck();
 

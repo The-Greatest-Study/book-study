@@ -1,4 +1,4 @@
-package jihong.chapter12_MVC.Duck;
+package swooku.chapter12_CompositePattern;
 
 public class Goose {
     public void honk() {
