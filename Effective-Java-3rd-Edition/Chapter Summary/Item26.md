@@ -36,3 +36,18 @@
 그리고 이들의 로 타입인 Set은 제네릭 타입 시스템에 속하지 않는다.
 
 Set<Object>와 Set<?>는 안전하지만, 로 타입인 Set은 안전하지 않다.
+
+## 용어 정의
+| 한글 용어         | 영문 용어                   | 예시                               | 관련 아이템 |
+|---------------|-------------------------|----------------------------------|--------|
+| 매개변수화 타입      | parameterized type      | List<String>                     | 26     |
+| 실제 타입 매개변수    | actual type parameter   | String                           | 26     |
+| 제네릭 타입        | generic type            | List<E>                          | 26, 29 |
+| 정규 타입 매개변수    | formal type parameter   | E                                | 26     |
+| 비한정적 와일드카드 타입 | unbounded wildcard type | List<?>                          | 26     |
+| 한정적 와일드카드 타입  | bounded wildcard type   | List<? extends Number>           | 31     |
+| 로 타입          | raw type                | List                             | 26     |
+| 한정적 타입 매개변수   | bounded type parameter  | <E extends Number>               | 29     |
+| 재귀적 타입 한정     | recursive type bound    | <T extends Comparable<T>>        | 30     |
+| 제네릭 메서드       | generic method          | static <E> List<E> asList(E[] a) | 30     |
+| 타입 토큰         | type token              | String.class                     | 33     |
